@@ -36,7 +36,7 @@ hi Special guifg=#dfd6ff guibg=NONE
 hi Label guifg=#dfd6ff guibg=NONE
 hi Delimiter guifg=#dfd6ff guibg=NONE
 hi Number guifg=#dfd6ff guibg=NONE
-hi CursorLineNR guifg=#dfd6ff guibg=NONE
+hi CursorLineNR guifg=#af99ff guibg=NONE
 hi Define guifg=#dfd6ff guibg=NONE
 hi MoreMsg guifg=#dfd6ff guibg=NONE
 hi Tag guifg=#dfd6ff guibg=NONE
@@ -66,7 +66,7 @@ hi LineNr guifg=#EDBFFF guibg=#130E14
 hi NonText guifg=#c481ff guibg=#26192b
 hi Comment guifg=#c481ff gui=italic
 hi SpecialComment guifg=#c481ff gui=italic guibg=NONE
-hi CursorLine guibg=#454545
+hi CursorLine guibg=NONE
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#3000db guibg=#454545 gui=NONE
 hi StatusLine gui=bold guibg=#454545 guifg=#bba8ff
