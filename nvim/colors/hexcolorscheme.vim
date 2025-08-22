@@ -36,7 +36,7 @@ hi Special guifg=#dfd6ff guibg=NONE
 hi Label guifg=#dfd6ff guibg=NONE
 hi Delimiter guifg=#dfd6ff guibg=NONE
 hi Number guifg=#dfd6ff guibg=NONE
-hi CursorLineNR guifg=#af99ff guibg=NONE
+hi CursorLineNR guifg=#ff80e3 guibg=NONE
 hi Define guifg=#dfd6ff guibg=NONE
 hi MoreMsg guifg=#dfd6ff guibg=NONE
 hi Tag guifg=#dfd6ff guibg=NONE
