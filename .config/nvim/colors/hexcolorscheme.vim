@@ -69,8 +69,11 @@ hi SpecialComment guifg=#c481ff gui=italic guibg=NONE
 hi CursorLine guibg=NONE
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#3000db guibg=#454545 gui=NONE
-hi StatusLine gui=bold guibg=#454545 guifg=#bba8ff
+hi StatusLine gui=bold guibg=#130e14 guifg=#bba8ff
 hi StatusLineNC gui=NONE guibg=#26192b guifg=#bba8ff
 hi Search guibg=#c481ff guifg=#bba8ff
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
+
+hi zshOptStart guifg=#ff6193
+hi zshCommands guifg=#ff6193
