@@ -1,5 +1,11 @@
 ## Initial
 ### functional
+- [ ] zsh
+	- [ ] tweak git aliases 
+		- [x] add --no-ff to default merge
+		- [x] alias for listing ti branches
+	- [ ] add custom aliases?
+	- [ ] install some [[zsh plugins|plugins]]
 - [ ] improve hyprland 
 	- [ ] hotkeys
 		- [ ] open terminals
@@ -20,7 +26,9 @@
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)
 - [ ] switch to brave?
-- [ ] start a more comprehensive readme for git
+- [ ] get a better git tree viewer?
+- [ ] start a more comprehensive readme for git repo
+	- [ ] find all dependancies hopefully
 
 
 ### a e s t h e t i c
@@ -37,7 +45,10 @@
 	- [ ] and fun css animations etc
 	- [ ] indoctrinate aesthetics of functional stuff added above
 - [ ] zsh
-	- [ ] better prompt (transient?) (starship?)
+	- [ ] better prompt 
+		- [ ] (transient?) 
+		- [ ] (starship?)
+		- [ ] multiline
 - [ ] cava?
 
 ## long-term
