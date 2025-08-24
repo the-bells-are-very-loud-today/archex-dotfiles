@@ -6,3 +6,4 @@ Proton Mail*
 .config/pulse/*.pid
 .config/pulse/*-database-*
 .config/pulse/*-volumes-*
+.obsidian/*
