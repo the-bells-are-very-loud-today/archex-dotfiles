@@ -1,3 +1,8 @@
 Proton Mail*
 .gitconfig
 .stow-local-ignore
+.config/pulse/*.tdb
+.config/pulse/cookie
+.config/pulse/*.pid
+.config/pulse/*-database-*
+.config/pulse/*-volumes-*
