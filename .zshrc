@@ -70,10 +70,36 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+autoload -U compinit && compinit
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+# HISTORY
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# completion styling
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+
+# shell integrations
+eval "$(fzf --zsh)"
+
 
 source $ZSH/oh-my-zsh.sh
 
+# enable fzf keybinds
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+# bindkey '^R' fzf-history-widget
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
