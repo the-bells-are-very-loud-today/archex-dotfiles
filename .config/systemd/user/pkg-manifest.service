@@ -1,0 +1,6 @@
+[Unit]
+Dscription=generate package manifests
+
+[Service]
+Type=oneshot
+ExecStart=/home/bells/bin/pkg-manifest.sh
