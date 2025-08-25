@@ -15,7 +15,7 @@
 - [ ] themes: tiny plugin for a few theme aliases
 - [ ] man, tldr: maybeworthwhile plugins for quickly man and tldr (what is tldr command tho?)
 - [ ] vi-mode: worth a try? vim motions for terminal?
-- [ ] z: the better cd? check that one yt vid 
+- [x] z: the better cd? check that one yt vid 
 # external
 - [x] zsh-syntax-highlighting, zsh-completions, zsh-autosuggestions
 - [x] powerlevel10k

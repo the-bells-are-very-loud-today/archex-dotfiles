@@ -79,7 +79,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Add wisely, as too many plugins slow down shell startup.
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 autoload -U compinit && compinit
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo aliases alias-finder colored-man-pages command-not-found)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions sudo aliases alias-finder colored-man-pages command-not-found thefuck)
 # HISTORY
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -102,7 +102,7 @@ zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
 
 # shell integrations
 eval "$(fzf --zsh)"
-
+eval "$(zoxide init zsh)"
 
 source $ZSH/oh-my-zsh.sh
 # enable fzf keybinds
