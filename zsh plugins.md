@@ -1,6 +1,6 @@
 # out of the box
 - [x] aliases: for searching aliases
-- [x] alias-finder: for suggesting shortest alias of a command
+- [ ] alias-finder: for suggesting shortest alias of a command
 - [x] colored-man-pages: for pretty man pages?
 - [x] command-not-found: for suggesting packages to install when entering a command
 - [ ] common-aliases: a bunch of general purpose aliases (may need to configure if other plugins wnat some)
