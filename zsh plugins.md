@@ -1,8 +1,8 @@
 # out of the box
-- [ ] aliases: for searching aliases
-- [ ] alias-finder: for suggesting shortest alias of a command
-- [ ] colorized-man-pages: for pretty man pages?
-- [ ] command-not-found: for suggesting packages to install when entering a command
+- [x] aliases: for searching aliases
+- [x] alias-finder: for suggesting shortest alias of a command
+- [x] colored-man-pages: for pretty man pages?
+- [x] command-not-found: for suggesting packages to install when entering a command
 - [ ] common-aliases: a bunch of general purpose aliases (may need to configure if other plugins wnat some)
 - [ ] copybuffer, copyfile, copypath: handy clipboard utils
 - [ ] docker: autocomplete and alias for docker (which I may want later '~')
@@ -10,7 +10,7 @@
 - [ ] fzf: maybe this will be nice if I get fzf
 - [ ] history-substring-search: may be a good CL history search...
 - [ ] starship: interested in this prompt..
-- [ ] sudo: for prefixing previous command with sudo
+- [x] sudo: for prefixing previous command with sudo
 - [ ] thefuck: for when you fuck up a command
 - [ ] themes: tiny plugin for a few theme aliases
 - [ ] man, tldr: maybeworthwhile plugins for quickly man and tldr (what is tldr command tho?)
@@ -18,3 +18,4 @@
 - [ ] z: the better cd? check that one yt vid 
 # external
 - [x] zsh-syntax-highlighting, zsh-completions, zsh-autosuggestions
+- [x] powerlevel10k
