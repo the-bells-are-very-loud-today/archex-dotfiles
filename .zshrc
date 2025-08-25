@@ -96,6 +96,9 @@ setopt hist_find_no_dups
 # completion styling
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
+#alias-finder behavior
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
 
 # shell integrations
 eval "$(fzf --zsh)"
