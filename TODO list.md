@@ -5,7 +5,7 @@
 		- [x] add --no-ff to default merge
 		- [x] alias for listing ti branches
 	- [ ] add custom aliases?
-	- [ ] install some [[zsh plugins|plugins]]
+	- [x] install some [[zsh plugins|plugins]]
 - [ ] improve hyprland 
 	- [ ] hotkeys
 		- [ ] open terminals
