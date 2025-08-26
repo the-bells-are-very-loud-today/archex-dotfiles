@@ -35,14 +35,12 @@
 
 
 ### a e s t h e t i c
-- [ ] imrpove hyprland
+- [x] imrpove hyprland
 	- [x] tweak opacity of windows
 	- [x] add active border back? maybe (make subtle if so)
 	- [x] dimming?
 	- [x] shadow
 	- [x] workspace wraparound
-	- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
-	
 - [ ] improve waybar
 	- [ ] not ugly, but not perfect yet for a general vibe
 	- [ ] and fun css animations etc
@@ -57,6 +55,7 @@
 ## long-term
 ### research
 - [ ] GTK/QT theme
+- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 - [ ] dark/light mode?
 - [ ] look into configuring dolhpin, or potentialyl get another file explorer? probably that and configure it
 - [ ] further kitty configuration maybe?
