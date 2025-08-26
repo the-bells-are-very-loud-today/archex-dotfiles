@@ -23,6 +23,8 @@
 	- [x] follow mouse maybe not
 	- [ ] separate hypland config via source
 - [ ] configure dunst
+- [ ] swww
+	- [ ] configure sww (wallpaper animate weird)
 - [ ] improve waybar functionality
 	- [ ] playerctl for spotify (hopefully this will also display what's currently playing)
 	- [ ] improve clock with date
