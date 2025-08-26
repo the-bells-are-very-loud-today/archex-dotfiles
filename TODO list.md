@@ -37,7 +37,7 @@
 ### a e s t h e t i c
 - [ ] imrpove hyprland
 	- [ ] tweak opacity of windows
-	- [ ] add active border back? maybe (make subtle if so)
+	- [x] add active border back? maybe (make subtle if so)
 	- [ ] dimming?
 	- [ ] shadow
 	- [ ] workspace wraparound
@@ -47,11 +47,11 @@
 	- [ ] not ugly, but not perfect yet for a general vibe
 	- [ ] and fun css animations etc
 	- [ ] indoctrinate aesthetics of functional stuff added above
-- [ ] zsh
-	- [ ] better prompt 
-		- [ ] (transient?) 
-		- [ ] (starship?)
-		- [ ] multiline
+- [x] zsh
+	- [x] better prompt 
+		- [x] (transient?) 
+		- [x] (starship?)
+		- [x] multiline
 - [ ] cava?
 
 ## long-term
