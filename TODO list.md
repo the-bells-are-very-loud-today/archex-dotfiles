@@ -39,7 +39,7 @@
 	- [ ] tweak opacity of windows
 	- [x] add active border back? maybe (make subtle if so)
 	- [ ] dimming?
-	- [ ] shadow
+	- [x] shadow
 	- [ ] workspace wraparound
 	- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 	
