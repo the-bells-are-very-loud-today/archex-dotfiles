@@ -18,6 +18,14 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+.playing 
+{
+	background-color: rgba(19, 14, 20, 1);
+}
+.paused
+{
+	background-color: rgba(255,255,255,1);
+}
 /*
 window#waybar.empty {
     background-color: transparent;

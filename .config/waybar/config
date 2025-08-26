@@ -12,7 +12,10 @@
 	],
 	"modules-center" :
 	[
-		"hyprland/window"
+		"mpris",
+		"custom/prev",
+		"custom/play-pause",
+		"custom/next",
 	],
 	"modules-right" :
 	[
@@ -62,5 +65,32 @@
             		"default": ["", "", ""]
         	},
         	"on-click": "pavucontrol"
-    }
+    },
+  "mpris":
+  {
+
+	  "format": " {title} - {artist}",
+  },
+  "custom/prev" : 
+  {
+  	"exec": "~/bin/waybar/music/prev.sh",
+	"on-click": "playerctl play-pause",
+	"interval": 1,
+	"return-type" : "json"
+  },
+  "custom/play-pause" : 
+  {
+  	"exec": "~/bin/waybar/music/play-pause.sh",
+	"on-click": "playerctl play-pause",
+	"interval": 1,
+	"return-type" : "json"
+  },
+  "custom/next" : 
+  {
+  	"exec": "~/bin/waybar/music/next.sh",
+	"on-click": "playerctl play-pause",
+	"interval": 1,
+	"return-type" : "json"
+  }
+
 }

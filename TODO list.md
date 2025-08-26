@@ -26,7 +26,8 @@
 - [ ] swww
 	- [ ] configure sww (wallpaper animate weird)
 - [ ] improve waybar functionality
-	- [ ] playerctl for spotify (hopefully this will also display what's currently playing)
+	- [ ] MPD  ~~playerctl for spotify (hopefully this will also display what's currently playing)~~
+	- [ ] cava?
 	- [ ] improve clock with date
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)
@@ -52,7 +53,9 @@
 		- [x] (transient?) 
 		- [x] (starship?)
 		- [x] multiline
-- [ ] cava?
+- [ ] cava!
+	- [ ] make pwetty 
+	- [ ] shaders?
 
 ## long-term
 ### research
