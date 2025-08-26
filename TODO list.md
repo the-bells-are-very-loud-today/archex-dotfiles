@@ -8,18 +8,23 @@
 	- [x] install some [[zsh plugins|plugins]]
 - [ ] improve hyprland 
 	- [ ] hotkeys
-		- [ ] open terminals
-		- [ ] close windows
-		- [ ] move windows in layout
-		- [ ] moving windows to workspace with and without moving me there too
-		- [ ] pinned windows?
+		- [x] open terminals
+		- [x] close windows
+		- [x] open browser
+		- [x] move windows in layout
+		- [x] moving windows to workspace with and without moving me there too
+		- [x] pinned windows? no thanks floating wiondows? cringe??
 		- [ ] try to configure fn keys (volume must ff rw playpause)
-		- [ ] look through options for more...
-	- [ ] snapping?
-	- [ ] look into groups?
-	- [ ] follow mouse maybe not
+		- [x] look through options for more...
+		- [x] change exit to uwsm stop
+		- [x] groupings? no thanks
+	- [x] snapping?
+	- [x] look into groups?
+	- [x] follow mouse maybe not
 	- [ ] separate hypland config via source
 - [ ] configure dunst
+- [ ] swww
+	- [ ] configure sww (wallpaper animate weird)
 - [ ] improve waybar functionality
 	- [ ] playerctl for spotify (hopefully this will also display what's currently playing)
 	- [ ] improve clock with date
@@ -32,28 +37,27 @@
 
 
 ### a e s t h e t i c
-- [ ] imrpove hyprland
-	- [ ] tweak opacity of windows
-	- [ ] add active border back? maybe (make subtle if so)
-	- [ ] dimming?
-	- [ ] shadow
-	- [ ] workspace wraparound
-	- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
-	
+- [x] imrpove hyprland
+	- [x] tweak opacity of windows
+	- [x] add active border back? maybe (make subtle if so)
+	- [x] dimming?
+	- [x] shadow
+	- [x] workspace wraparound
 - [ ] improve waybar
 	- [ ] not ugly, but not perfect yet for a general vibe
 	- [ ] and fun css animations etc
 	- [ ] indoctrinate aesthetics of functional stuff added above
-- [ ] zsh
-	- [ ] better prompt 
-		- [ ] (transient?) 
-		- [ ] (starship?)
-		- [ ] multiline
+- [x] zsh
+	- [x] better prompt 
+		- [x] (transient?) 
+		- [x] (starship?)
+		- [x] multiline
 - [ ] cava?
 
 ## long-term
 ### research
 - [ ] GTK/QT theme
+- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 - [ ] dark/light mode?
 - [ ] look into configuring dolhpin, or potentialyl get another file explorer? probably that and configure it
 - [ ] further kitty configuration maybe?
