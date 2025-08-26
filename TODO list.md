@@ -36,9 +36,9 @@
 
 ### a e s t h e t i c
 - [ ] imrpove hyprland
-	- [ ] tweak opacity of windows
+	- [x] tweak opacity of windows
 	- [x] add active border back? maybe (make subtle if so)
-	- [ ] dimming?
+	- [x] dimming?
 	- [x] shadow
 	- [ ] workspace wraparound
 	- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
