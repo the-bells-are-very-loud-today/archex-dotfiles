@@ -40,7 +40,7 @@
 	- [x] add active border back? maybe (make subtle if so)
 	- [x] dimming?
 	- [x] shadow
-	- [ ] workspace wraparound
+	- [x] workspace wraparound
 	- [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 	
 - [ ] improve waybar
