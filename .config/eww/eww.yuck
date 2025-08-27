@@ -1,12 +1,13 @@
+(defvar gel-speed "12s")
 (defwindow bar
 	:monitor 0
 	:geometry (geometry 
 			:x "0"
 			:y "0"
-			:width "100%"
-			:height "20px"
+			:width "10%"
+			:height "0px"
 			:anchor "top center")
-	:stacking "overlay"
+	:stacking "fg"
 	:exclusive "false"
 	:reserve (struts :distance "40px" :side "top")
 	:namespace "ewwbar"
@@ -32,12 +33,15 @@
 	(box
 		:class "center"
 		:orientation "h"
-		(gel)
+		(gel :speed 12)
 	)
 )
 (defwidget gel []
 	(box
 		:class "gel"
+		:namespace "gel"
+		:space-evenly false
+		:style "animation: frames ${gel-speed} ease infinite;"
 		(spotify)
 		(music-info)
 		(prev)
@@ -46,7 +50,11 @@
 	)
 )
 (defwidget spotify []
-"PLACEHOLDER")
+	(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
+		:class "spotify"
+		:namespace "spotify"
+		:width 6 
+""))
 (defwidget music-info []
 "PLACEHOLDER")
 (defwidget prev []

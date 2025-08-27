@@ -1,5 +1,49 @@
+* {
+    /*all: unset;*/
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "FontAwesome", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
 .bar 
 {
   background-color: transparent;
   border-radius: 9px
+
+}
+.gel
+{
+  margin-top: 12px;
+  color: pink ;
+  border-radius: 50px;
+  text-shadow: 0 0 9px #000000;
+}
+@keyframes frames {
+  0% {
+    background-image: linear-gradient(0deg, #FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  20% {
+    background-image: linear-gradient(72deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  40% {
+    background-image: linear-gradient(144deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  60% {
+    background-image: linear-gradient(216deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  80% {
+    background-image: linear-gradient(288deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  100% {
+    background-image: linear-gradient(360deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+}
+.spotify
+{
+  background-image: none;
+  color: pink;
+  border-radius: 300px;
+  border-width: 1px;
+  border-color: transparent;
+  text-shadow: inherit;
+  margin-left: 0px;
 }

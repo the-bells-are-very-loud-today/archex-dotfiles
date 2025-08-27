@@ -1,11 +1,12 @@
 {
-	"layer" : "bot",
+	"layer" : "bottom",
 	"exclusive" : false,
 	"position" : "top",
 	"margin-top" : 0,
-	"margin-bottom" : 0,
+	"margin-bottom" : ,
 	"margin-right" : 0,
 	"margin-left" : 0,
+
 
 	"modules-left" : 
 	[
