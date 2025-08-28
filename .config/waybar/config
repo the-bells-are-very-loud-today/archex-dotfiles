@@ -1,9 +1,8 @@
 {
-	"layer" : "bottom",
+	"layer" : "top",
 	"exclusive" : false,
 	"position" : "top",
 	"margin-top" : 0,
-	"margin-bottom" : ,
 	"margin-right" : 0,
 	"margin-left" : 0,
 

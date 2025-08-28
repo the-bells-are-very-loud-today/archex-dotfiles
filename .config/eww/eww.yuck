@@ -1,4 +1,5 @@
-(defvar gel-speed "12s")
+(defvar gel-speed "1s")
+(deflisten cava-bass :initial "0,0,0,0,0" 'cat ~/test.fifo')
 (defwindow bar
 	:monitor 0
 	:geometry (geometry 
@@ -39,7 +40,6 @@
 (defwidget gel []
 	(box
 		:class "gel"
-		:namespace "gel"
 		:space-evenly false
 		:style "animation: frames ${gel-speed} ease infinite;"
 		(spotify)
@@ -52,11 +52,10 @@
 (defwidget spotify []
 	(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
 		:class "spotify"
-		:namespace "spotify"
 		:width 6 
 ""))
 (defwidget music-info []
-"PLACEHOLDER")
+{captures(cava-bass, "[0-9]+")})
 (defwidget prev []
 "PLACEHOLDER")
 (defwidget play-pause []

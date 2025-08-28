@@ -1,5 +1,5 @@
 * {
-    /*all: unset;*/
+    all: unset;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "FontAwesome", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -15,7 +15,9 @@
   margin-top: 12px;
   color: pink ;
   border-radius: 50px;
+  border-color: black;
   text-shadow: 0 0 9px #000000;
+  min-width: 300px;
 }
 @keyframes frames {
   0% {
@@ -42,8 +44,9 @@
   background-image: none;
   color: pink;
   border-radius: 300px;
-  border-width: 1px;
-  border-color: transparent;
-  text-shadow: inherit;
-  margin-left: 0px;
+  border-width: 399px;
+  border-color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
 }
