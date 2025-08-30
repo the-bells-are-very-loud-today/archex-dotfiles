@@ -42,8 +42,13 @@
 }
 .spotify
 {
-  margin-right: 30px;
+  margin-right: 10px;
 
   background-image: none;
   color: pink;
+}
+.metadata
+{
+  text-shadow: 0px 0px 3px rgba(38,25,43,0.4);
+  transition-timing-function: ease;
 }

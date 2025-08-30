@@ -1,5 +1,14 @@
 (defvar gel-speed "12s")
+(deflisten scroll "~/.files/.archhex-dotfiles/.config/eww/scripts/scroll.sh")
+(defvar scroll_width 230)
 (deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
+(defpoll playing :interval "1s"
+		:initial "No players found"
+'playerctl status')
+(defpoll metadata :interval "1s"
+		:initial "No players found"
+		:run-while {playing != "No players found"}
+'playerctl metadata -f "{{title}} - {{album}} - {{artist}}"')
 (defwindow bar
 	:monitor 0
 	:geometry (geometry 
@@ -48,7 +57,7 @@
 		:width 200
 		(box
 		:class "left"
-		:style "padding-left: ${80 + (search(cava-data, "[0-9]+")[0]/5)}px"
+		:style "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
 		)
 		(box
 		:orientation "horizontal"
@@ -57,24 +66,30 @@
 		:space-evenly false
 		(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
 			:class "spotify"
-			:width 2 
 			:halign "center"
-		"== ")
+		"")
 		(music-info)
+		(button :onclick "playerctl previous"
+		"󰑟")
 		)
 		(box :class "right"
-		:width 20
-		:style "padding-right: ${80 + (search(cava-data, "[0-9]+")[0]/5)}px"
+		:style "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
 		)
 	)
 )
 (defwidget music-info []
 	(box
-		:halign "end"
-"g e l           =="))
-(defwidget right []
-	(box
 		:class "left"
 		:orientation "h"
+		:width scroll_width
+		(scroll :hscroll true :active false
+			(transform :translate-x {0 - max(((strlength(metadata) * 9 ) - scroll_width - 9), 0) * scroll /100.0  + "px"}
+			    (box :space-evenly true
+				(label :class "metadata" :text metadata)
+			    )
+			)
+		)
 	)
 )
+
+
