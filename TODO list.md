@@ -1,7 +1,7 @@
 ## Initial
 ### functional
 - [ ] zsh
-	- [ ] tweak git aliases 
+	- [x] tweak git aliases 
 		- [x] add --no-ff to default merge
 		- [x] alias for listing ti branches
 	- [ ] add custom aliases?
@@ -26,8 +26,13 @@
 - [ ] swww
 	- [ ] configure sww (wallpaper animate weird)
 - [ ] improve waybar functionality
-	- [ ] MPD  ~~playerctl for spotify (hopefully this will also display what's currently playing)~~
-	- [ ] cava?
+	- [x] MPD  ~~playerctl for spotify (hopefully this will also display what's currently playing)~~
+	- [x] cava?
+	- [ ] g e l
+		- [x] get eww
+		- [x] make beat
+		- [ ] make gradient animate to beat
+		- [ ] autostart
 	- [ ] improve clock with date
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)
@@ -35,6 +40,7 @@
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
+- [ ] configure wofi?
 
 
 ### a e s t h e t i c
@@ -56,6 +62,10 @@
 - [ ] cava!
 	- [ ] make pwetty 
 	- [ ] shaders?
+- [ ] wofi
+	- [ ] make pretty
+- [ ] dunst
+	- [ ] make pretty
 
 ## long-term
 ### research
