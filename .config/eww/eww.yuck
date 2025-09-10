@@ -1,12 +1,22 @@
+(defvar gel-speed "12s")
+(deflisten scroll "~/.files/.archhex-dotfiles/.config/eww/scripts/scroll.sh")
+(defvar scroll_width 230)
+(deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
+(deflisten playing :interval "1s"
+		:initial "No players found"
+'/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/player-status.sh')
+(deflisten metadata :interval "1s"
+		:initial "No players found"
+'/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/metadata.sh')
 (defwindow bar
 	:monitor 0
 	:geometry (geometry 
 			:x "0"
 			:y "0"
-			:width "100%"
-			:height "20px"
+			:width "30%"
+			:height "0px"
 			:anchor "top center")
-	:stacking "overlay"
+	:stacking "fg"
 	:exclusive "false"
 	:reserve (struts :distance "40px" :side "top")
 	:namespace "ewwbar"
@@ -17,9 +27,8 @@
   (box :class "bar"
        :orientation "h"
        :space-evenly true
-    (left)
+       :halign "center"
     (center)
-    (right)
   )
 )
 (defwidget left []
@@ -32,32 +41,61 @@
 	(box
 		:class "center"
 		:orientation "h"
+		:halign "center"
+		:width 500
+		:space-evenly true
 		(gel)
 	)
 )
 (defwidget gel []
-	(box
+	(centerbox
 		:class "gel"
-		(spotify)
-		(music-info)
-		(prev)
-		(play-pause)
-		(next)
-	)
-)
-(defwidget spotify []
-"PLACEHOLDER")
-(defwidget music-info []
-"PLACEHOLDER")
-(defwidget prev []
-"PLACEHOLDER")
-(defwidget play-pause []
-"PLACEHOLDER")
-(defwidget next []
-"PLACEHOLDER")
-(defwidget right []
-	(box
+		:style {playing == "Playing" ? "background-image: linear-gradient(72deg,#FF80E3, #D18AEC ${min(max((search(cava-data, "[0-9]+")[1]) - search(cava-data, "[0-9]+")[2],10), 70)}%, #DFAEF2 ${min(max(90 - (search(cava-data, "[0-9]+")[4] - search(cava-data, "[0-9]+")[3]),(search(cava-data, "[0-9]+")[1]) + search(cava-data, "[0-9]+")[2]), 90)}%, #EEC8FE);" : "background-image: linear-gradient(#130E14, #26192B);"}
+		:orientation "horizontal"
+		:halign "center"
+		(box
 		:class "left"
-		:orientation "h"
+		:style "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
+		)
+		(box
+		:orientation "horizontal"
+		:halign "center"
+		:space-evenly false
+		(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
+			:class "spotify"
+			:halign "center"
+		"")
+		(music-info)
+		(box
+			:class "controls"
+		:space-evenly true
+		:width 60
+		(button :onclick "playerctl previous"
+		"")
+		(button :onclick "playerctl play-pause":class "play-pause"
+		{playing == "Playing" ? "" : ""}
+			)
+		(button :onclick "playerctl next"
+		"")
+		))
+		(box :class "right"
+		:style "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
+		)
 	)
 )
+(defwidget music-info []
+	(box
+		:orientation "h"
+		:width {playing != "" ? scroll_width : 100}
+		:class "music-info"
+		(scroll :hscroll true :active false
+			(transform :translate-x {0 - max(((strlength(metadata) * 10 ) - scroll_width - 10), 0) * scroll /100.0  + "px"}
+			    (box :space-evenly true
+				(label :class "metadata" :text {playing == "" ? "hee hee" : metadata})
+			    )
+			)
+		)
+	)
+)
+
+
