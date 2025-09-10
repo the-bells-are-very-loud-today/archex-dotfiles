@@ -31,7 +31,7 @@
 	- [ ] g e l
 		- [x] get eww
 		- [x] make beat
-		- [ ] make gradient animate to beat
+		- [x] make gradient animate to beat
 		- [ ] autostart
 	- [ ] improve clock with date
 	- [ ] notifications (via dunst)
