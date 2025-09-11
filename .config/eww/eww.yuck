@@ -18,7 +18,7 @@
 			:anchor "top center")
 	:stacking "fg"
 	:exclusive "false"
-	:reserve (struts :distance "40px" :side "top")
+	:reserve (struts :distance "400px" :side "top")
 	:namespace "ewwbar"
 	
 (bar))
@@ -89,7 +89,7 @@
 		:width {playing != "" ? scroll_width : 100}
 		:class "music-info"
 		(scroll :hscroll true :active false
-			(transform :translate-x {0 - max(((strlength(metadata) * 10 ) - scroll_width - 10), 0) * scroll /100.0  + "px"}
+			(transform :translate-x {0 - max(((strlength(metadata) * 9 ) - scroll_width - 10), 0) * scroll /100.0  + "px"}
 			    (box :space-evenly true
 				(label :class "metadata" :text {playing == "" ? "hee hee" : metadata})
 			    )

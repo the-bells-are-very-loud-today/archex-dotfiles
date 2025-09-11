@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 window#waybar 
@@ -10,7 +10,7 @@ window#waybar
 	border-top: 0px solid transparent; 
 	color: #BBA8F2;
 	transition-property: background-color;
-	transition-duration: .3s;
+	transition-duration: .25s;
 	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 1)100%);*/
 }
 
@@ -60,7 +60,12 @@ button:hover {
 }
 
 #workspaces button {
-    }
+    	background-color: #130E14;
+	margin-left: 7px;
+	margin-right: 7px;
+	min-width: 40px;
+	box-shadow: 0px 0px 4px 1px #000000;
+}
 
 #workspaces button:hover {
     background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
@@ -71,7 +76,9 @@ button:hover {
 #workspaces button.active {
     background-color: #DFAEF2;
     color: #26192B;
-    /*box-shadow: inset 0 -3px #ffffff;*/
+    min-width: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 #workspaces button.active:hover {
     background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
@@ -111,10 +118,9 @@ button:hover {
 #window,
 #workspaces 
 {
-	background-color: #130E14;
-	padding: 6px;
+	background-color: transparent;
+	padding: 8px;
 	border-radius: 6px;
-	margin: 4px 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -133,8 +139,6 @@ button:hover {
     	background-color: #130E14;
 	padding: 6px;
 	border-radius: 0px 6px 6px 0px;
-	margin-top: 4px;
-	margin-bottom: 4px;
 	margin-right: 4px;
 }
 
@@ -221,7 +225,7 @@ label:focus {
     	background-color: #130E14;
 	padding: 6px;
 	border-radius: 0px;
-	margin: 4px 0px;
+	margin: 0px 0px;
 }
 
 #pulseaudio.muted {
@@ -350,4 +354,29 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+#pulseaudio-slider {
+    padding-left: 6px;
+    margin: 0;
+    background-color: #130E14;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 80px;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: black;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-image: linear-gradient(72deg,  #D18AEC, #DFAEF2); 
 }

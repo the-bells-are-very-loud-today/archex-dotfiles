@@ -2,7 +2,7 @@
 	"layer" : "top",
 	"exclusive" : false,
 	"position" : "top",
-	"margin-top" : 0,
+	"margin-top" : 12,
 	"margin-right" : 0,
 	"margin-left" : 0,
 
@@ -17,6 +17,7 @@
 	"modules-right" :
 	[
 		"tray",
+		"pulseaudio/slider",
 		"pulseaudio",
 		"clock"
 	],
@@ -24,7 +25,7 @@
 	// modules configuration
 	"hyprland/workspaces" : 
 	{
-		"format" : "✦{icon}✦", //{windows}",
+		"format" : "{icon}", //{windows}",
 		"format-icons" :
 		{
 			"magic" : "❂"
@@ -46,7 +47,7 @@
    	"pulseaudio":
 	{
         	// "scroll-step": 1, // %, can be a float
-        	"format": "{volume}% {icon} {format_source}",
+        	"format": "{icon} {format_source}",
         	"format-bluetooth": "{volume}% {icon} {format_source}",
         	"format-bluetooth-muted": " {icon} {format_source}",
         	"format-muted": " {format_source}",
@@ -62,5 +63,9 @@
             		"default": ["", "", ""]
         	},
         	"on-click": "pavucontrol"
-    }
+    	},
+	"pulseaudio/slider":
+	{
+		
+	}
 }
