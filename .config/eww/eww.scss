@@ -2,7 +2,7 @@
     all: unset;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "FontAwesome", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 .bar 
 {
@@ -12,14 +12,14 @@
 }
 .gel
 {
-  margin-top: 12px;
+  margin-top: 6px;
   color: #A15EFF ;
   border-radius: 50px;
   border-color: black;
   text-shadow: 0 0 6px #130E14;
   min-width: 3px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   transition: width 2s ease;
 }
 @keyframes frames {

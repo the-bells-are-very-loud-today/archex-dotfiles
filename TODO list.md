@@ -32,10 +32,12 @@
 		- [x] get eww
 		- [x] make beat
 		- [x] make gradient animate to beat
-		- [ ] autostart
+		- [x] autostart
 	- [ ] improve clock with date
+	- [ ] add network status
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)
+	- [ ] shutdown/lock screen
 - [ ] switch to brave?
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo

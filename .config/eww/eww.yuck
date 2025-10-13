@@ -89,9 +89,9 @@
 		:width {playing != "" ? scroll_width : 100}
 		:class "music-info"
 		(scroll :hscroll true :active false
-			(transform :translate-x {0 - max(((strlength(metadata) * 9 ) - scroll_width - 10), 0) * scroll /100.0  + "px"}
+			(transform :translate-x {0 - max(((strlength(metadata) * 7 ) - scroll_width + 17), 0) * scroll /100.0  + "px"}
 			    (box :space-evenly true
-				(label :class "metadata" :text {playing == "" ? "hee hee" : metadata})
+				(label :class "metadata" :text {playing == "" ? "g e l" : metadata})
 			    )
 			)
 		)
