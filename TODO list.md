@@ -33,7 +33,7 @@
 		- [x] make beat
 		- [x] make gradient animate to beat
 		- [x] autostart
-	- [ ] improve clock with date
+	- [x] improve clock with date
 	- [ ] add network status
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)

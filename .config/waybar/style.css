@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 window#waybar 
@@ -11,7 +11,7 @@ window#waybar
 	color: #BBA8F2;
 	transition-property: background-color;
 	transition-duration: .25s;
-	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 1)100%);*/
+	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 0.6)100%);*/
 }
 
 window#waybar.hidden {
@@ -41,8 +41,8 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 6px;
-    margin-top: 0px;
-    padding: 3px 6px;
+    margin-top: -1px;
+    padding: 1px 3px;
     background-color: transparent;
     color: #BBA8F2;
 
@@ -134,12 +134,14 @@ button:hover {
 }
 
 #clock {
+    margin-top: 6px;
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
 	padding: 6px;
 	border-radius: 0px 6px 6px 0px;
 	margin-right: 4px;
+
 }
 
 #battery {
@@ -220,12 +222,12 @@ label:focus {
 
 #pulseaudio 
 {
+	margin-top: 6px;
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
 	padding: 6px;
 	border-radius: 0px;
-	margin: 0px 0px;
 }
 
 #pulseaudio.muted {
@@ -265,6 +267,7 @@ label:focus {
 }
 
 #tray {
+    margin-top: 6px;
     background-color: #2980b9;
 }
 
@@ -357,7 +360,7 @@ label:focus {
 }
 #pulseaudio-slider {
     padding-left: 6px;
-    margin: 0;
+    margin-top: 6px;
     background-color: #130E14;
 }
 #pulseaudio-slider slider {
