@@ -138,7 +138,7 @@ button:hover {
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
-	padding: 6px;
+	padding: 4px;
 	border-radius: 0px 6px 6px 0px;
 	margin-right: 4px;
 
@@ -226,7 +226,7 @@ label:focus {
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
-	padding: 6px;
+	padding: 4px;
 	border-radius: 0px;
 }
 

@@ -42,6 +42,7 @@
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
+- [ ] GET A PASSWORD MANAGER
 - [ ] configure wofi?
 
 
