@@ -1,5 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
+    all: unset;
     font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
@@ -94,7 +95,6 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -133,14 +133,13 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    margin-top: 6px;
-    	background-color: #130E14;
-    	color: #BBA8F2;
-    	background-color: #130E14;
-	padding: 4px;
+#system {
+	margin-top: 6px;
+	background-color: #130E14;
 	border-radius: 0px 6px 6px 0px;
 	margin-right: 4px;
+	margin-bottom: 4px;
+	padding : 0px;
 
 }
 
@@ -222,11 +221,9 @@ label:focus {
 
 #pulseaudio 
 {
-	margin-top: 6px;
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
-	padding: 4px;
 	border-radius: 0px;
 }
 
@@ -360,7 +357,7 @@ label:focus {
 }
 #pulseaudio-slider {
     padding-left: 6px;
-    margin-top: 6px;
+    margin-top: 0px;
     background-color: #130E14;
 }
 #pulseaudio-slider slider {

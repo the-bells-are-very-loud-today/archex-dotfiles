@@ -16,12 +16,21 @@
 	],
 	"modules-right" :
 	[
-		"tray",
-		"pulseaudio/slider",
-		"pulseaudio",
-		"clock"
+		"group/system"
 	],
 
+	// groups
+	"group/system" :
+	{
+		"orientation" : "horizontal",
+		"modules" : 
+		[
+			"tray",
+			"pulseaudio/slider",
+			"pulseaudio",
+			"clock"
+		]
+	},
 	// modules configuration
 	"hyprland/workspaces" : 
 	{

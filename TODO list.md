@@ -33,17 +33,24 @@
 		- [x] make beat
 		- [x] make gradient animate to beat
 		- [x] autostart
+		- [ ] open close button
+	- [ ] groups
+		- [ ] hardware group
+			- [ ] network
+			- [ ] gpu
+			- [ ] cpu
+		- [ ] shutdown group
+		- [ ] others maybe?
 	- [x] improve clock with date
-	- [ ] add network status
 	- [ ] notifications (via dunst)
 	- [ ] improve tray (may just yeet waybar tray and get something better)
-	- [ ] shutdown/lock screen
-- [ ] switch to brave?
+- [x] switch to brave?
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
 - [ ] GET A PASSWORD MANAGER
 - [ ] configure wofi?
+	- [ ] dont start multiple instances (diinki vid ref?)
 
 
 ### a e s t h e t i c
