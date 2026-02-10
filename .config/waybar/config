@@ -28,10 +28,35 @@
 			"tray",
 			"pulseaudio/slider",
 			"pulseaudio",
-			"clock"
+			"clock",
+			"group/power"
 		]
 	},
+	"group/power" :
+	{
+		"orientation" : "horizontal",
+		"modules" : 
+		[
+			"custom/power-off",
+			"custom/restart"
+		],
+		"test" : "test",
+		"drawer" :
+		{
+			"transition-left-to-right" : false
+		},
+	},
 	// modules configuration
+	"custom/power-off" :
+	{
+		"format" : "⏻",
+		"on-click" : "shutdown -P now"
+	},
+	"custom/restart" :
+	{
+		"format" : "",
+		"on-click" : "shutdown -r now"
+	},
 	"hyprland/workspaces" : 
 	{
 		"format" : "", //{windows}",

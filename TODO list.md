@@ -34,6 +34,7 @@
 		- [x] make gradient animate to beat
 		- [x] autostart
 		- [ ] open close button
+	- [ ] hyprland submap indicator
 	- [ ] groups
 		- [ ] hardware group
 			- [ ] network
@@ -90,5 +91,6 @@
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)
 - [ ] try gamemaker? 
+- [x] self hosted memos pls
 ### a e s t h e t i c
 - [ ] further htop config? 
