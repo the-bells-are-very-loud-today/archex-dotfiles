@@ -54,6 +54,20 @@
 	- [ ] dont start multiple instances (diinki vid ref?)
 
 
+### self-hosting
+- [ ] automated backups (timeshift for arch?)
+- [ ] security
+    - [ ] fail2ban (ddos protection)
+    - [ ] maybe watchtower? research this for arch
+    - [ ] crowdsec
+    - [ ] authelia
+    - [ ] ntfy logtfy
+    - [ ] grafana prometheus?
+- [ ] media
+    - [ ] immitch
+    - [ ] jellyfin
+    - [ ] nextcloue
+
 ### a e s t h e t i c
 - [x] imrpove hyprland
 	- [x] tweak opacity of windows
