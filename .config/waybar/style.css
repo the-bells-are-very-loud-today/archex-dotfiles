@@ -1,7 +1,8 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
+    all: unset;
     font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 window#waybar 
@@ -10,14 +11,13 @@ window#waybar
 	border-top: 0px solid transparent; 
 	color: #BBA8F2;
 	transition-property: background-color;
-	transition-duration: .3s;
-	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 1)100%);*/
+	transition-duration: .25s;
+	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 0.6)100%);*/
 }
 
 window#waybar.hidden {
     opacity: 0.2;
 }
-
 /*
 window#waybar.empty {
     background-color: transparent;
@@ -42,8 +42,8 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 6px;
-    margin-top: 0px;
-    padding: 3px 6px;
+    margin-top: -1px;
+    padding: 1px 3px;
     background-color: transparent;
     color: #BBA8F2;
 
@@ -57,11 +57,16 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #B28CC2;
 }
 
 #workspaces button {
-    }
+    	background-color: #130E14;
+	margin-left: 7px;
+	margin-right: 7px;
+	min-width: 40px;
+	box-shadow: 0px 0px 4px 1px #000000;
+}
 
 #workspaces button:hover {
     background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
@@ -72,7 +77,9 @@ button:hover {
 #workspaces button.active {
     background-color: #DFAEF2;
     color: #26192B;
-    /*box-shadow: inset 0 -3px #ffffff;*/
+    min-width: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 #workspaces button.active:hover {
     background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
@@ -88,7 +95,6 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -112,10 +118,9 @@ button:hover {
 #window,
 #workspaces 
 {
-	background-color: #130E14;
-	padding: 6px;
+	background-color: transparent;
+	padding: 8px;
 	border-radius: 6px;
-	margin: 4px 4px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -128,17 +133,18 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
-    	background-color: #130E14;
-    	color: #BBA8F2;
-    	background-color: #130E14;
-	padding: 6px;
-	border-radius: 0px 6px 6px 0px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+#system {
+	margin-top: 6px;
+	background-color: #130E14;
+	border-radius:6px;
 	margin-right: 4px;
-}
+	margin-bottom: 4px;
+	padding : 0px;
 
+}
+#power {
+	padding-right: 6px;
+}
 #battery {
     background-color: #ffffff;
     color: #000000;
@@ -220,9 +226,6 @@ label:focus {
     	background-color: #130E14;
     	color: #BBA8F2;
     	background-color: #130E14;
-	padding: 6px;
-	border-radius: 0px;
-	margin: 4px 0px;
 }
 
 #pulseaudio.muted {
@@ -262,6 +265,7 @@ label:focus {
 }
 
 #tray {
+    margin-top: 6px;
     background-color: #2980b9;
 }
 
@@ -351,4 +355,38 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+#pulseaudio-slider {
+    padding-left: 6px;
+    margin-top: 0px;
+    background-color: #130E14;
+    border-radius: 5px;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 80px;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: black;
+}
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-image: linear-gradient(72deg,  #D18AEC, #DFAEF2); 
+}
+#custom-power-off
+{
+}
+#custom-restart
+{
+	padding-right: 6px;
 }

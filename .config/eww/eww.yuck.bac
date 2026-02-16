@@ -1,0 +1,80 @@
+(defvar gel-speed "12s")
+(deflisten cava-bass :initial "0,0,0,0,0" 'cat ~/test.fifo')
+(defwindow bar
+	:monitor 0
+	:geometry (geometry 
+			:x "0"
+			:y "0"
+			:width "30%"
+			:height "0px"
+			:anchor "top center")
+	:stacking "fg"
+	:exclusive "false"
+	:reserve (struts :distance "40px" :side "top")
+	:namespace "ewwbar"
+	
+(bar))
+
+(defwidget bar []
+  (box :class "bar"
+       :orientation "h"
+       :space-evenly true
+       :halign "center"
+    (center)
+  )
+)
+(defwidget left []
+	(box
+		:class "left"
+		:orientation "h"
+	)
+)
+(defwidget center []
+	(box
+		:class "center"
+		:orientation "h"
+		:halign "center"
+		:width 500
+		:space-evenly true
+		(gel)
+	)
+)
+(defwidget gel []
+	(centerbox
+		:class "gel"
+		:style "animation: frames ${(50000 / (1+ (10 * search(cava-bass, "[0-9]+")[3])))}ms ease infinite;"
+		:orientation "horizontal"
+		:halign "center"
+		:width 200
+		(box
+		:class "left"
+		:style "padding-left: ${50 + (search(cava-bass, "[0-9]+")[0]/5)}px"
+		)
+		(box
+		:orientation "horizontal"
+		:width 100 
+		:halign "center"
+		:space-evenly false
+		(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
+			:class "spotify"
+			:width 20 
+			:halign "center"
+		"")
+		(music-info)
+		)
+		(box :class "right"
+		:width 20
+		:style "padding-right: ${50 + (search(cava-bass, "[0-9]+")[0]/5)}px"
+		)
+	)
+)
+(defwidget music-info []
+	(box
+		:halign "end"
+"hey"))
+(defwidget right []
+	(box
+		:class "left"
+		:orientation "h"
+	)
+)

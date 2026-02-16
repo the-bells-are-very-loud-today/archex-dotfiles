@@ -1,0 +1,68 @@
+* {
+    all: unset;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    /*font-family: "FontAwesome", FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-size: 15px;
+}
+.bar 
+{
+  background-color: transparent;
+  border-radius: 9px
+
+}
+.gel
+{
+  margin-top: 6px;
+  color: #A15EFF ;
+  border-radius: 50px;
+  border-color: black;
+  text-shadow: 0 0 6px #130E14;
+  min-width: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  transition: width 2s ease;
+}
+@keyframes frames {
+  0% {
+    background-image: linear-gradient(0deg, #FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  20% {
+    background-image: linear-gradient(72deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  40% {
+    background-image: linear-gradient(144deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  60% {
+    background-image: linear-gradient(216deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  80% {
+    background-image: linear-gradient(288deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+  100% {
+    background-image: linear-gradient(360deg,#FF80E3, #D18AEC, #DFAEF2, #EEC8FE);
+  }
+}
+.spotify
+{
+  margin-right: 10px;
+
+  background-image: none;
+}
+.controls
+{
+  text-shadow: 0px 0px 1px rgba(38,25,43,0.4);
+}
+.playpause
+{
+}
+.metadata
+{
+  text-shadow: 0px 0px 4px rgba(38,25,43,0.4);
+  transition-timing-function: ease;
+}
+.music-info
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,7 +1,7 @@
 ## Initial
 ### functional
 - [ ] zsh
-	- [ ] tweak git aliases 
+	- [x] tweak git aliases 
 		- [x] add --no-ff to default merge
 		- [x] alias for listing ti branches
 	- [ ] add custom aliases?
@@ -26,15 +26,52 @@
 - [ ] swww
 	- [ ] configure sww (wallpaper animate weird)
 - [ ] improve waybar functionality
-	- [ ] playerctl for spotify (hopefully this will also display what's currently playing)
-	- [ ] improve clock with date
-	- [ ] notifications (via dunst)
+	- [x] MPD  ~~playerctl for spotify (hopefully this will also display what's currently playing)~~
+	- [x] cava?
+	- [ ] g e l
+		- [x] get eww
+		- [x] make beat
+		- [x] make gradient animate to beat
+		- [x] autostart
+		- [ ] open close button
+	- [ ] hyprland submap indicator
+	- [ ] groups
+		- [ ] hardware group
+			- [ ] network
+			- [ ] gpu
+			- [ ] cpu
+		- [ ] shutdown group
+		- [ ] others maybe?
+	- [x] improve clock with date
+	- [x] notifications (via dunst)
+	- [ ] workspace icons
 	- [ ] improve tray (may just yeet waybar tray and get something better)
-- [ ] switch to brave?
+- [x] switch to brave?
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
+- [x] GET A PASSWORD MANAGER
+- [ ] configure wofi?
+	- [ ] dont start multiple instances (diinki vid ref?)
+- [ ] dolphin config
+	- [ ] other file managers?
+	- [ ] zip files?
+	- [ ] open in terminal?
 
+
+### self-hosting
+- [x] automated backups (timeshift for arch?)
+- [ ] security
+    - [ ] fail2ban (ddos protection)
+    - [ ] maybe watchtower? research this for arch
+    - [ ] crowdsec
+    - [ ] authelia
+    - [ ] ntfy logtfy
+    - [ ] grafana prometheus?
+- [ ] media
+    - [ ] immitch
+    - [ ] jellyfin
+    - [ ] nextcloud
 
 ### a e s t h e t i c
 - [x] imrpove hyprland
@@ -52,7 +89,15 @@
 		- [x] (transient?) 
 		- [x] (starship?)
 		- [x] multiline
-- [ ] cava?
+- [ ] cava!
+	- [ ] make pwetty 
+	- [ ] shaders?
+- [ ] wofi
+	- [ ] make pretty
+- [ ] dunst
+	- [ ] make pretty
+- [ ] dolphin
+	- [ ] make pretty
 
 ## long-term
 ### research
@@ -67,5 +112,6 @@
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)
 - [ ] try gamemaker? 
+- [x] self hosted memos pls
 ### a e s t h e t i c
 - [ ] further htop config? 

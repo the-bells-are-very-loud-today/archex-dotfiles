@@ -1,10 +1,11 @@
 {
-	"layer" : "bot",
+	"layer" : "top",
+	"exclusive" : false,
 	"position" : "top",
 	"margin-top" : 0,
-	"margin-bottom" : 0,
 	"margin-right" : 0,
 	"margin-left" : 0,
+
 
 	"modules-left" : 
 	[
@@ -12,19 +13,59 @@
 	],
 	"modules-center" :
 	[
-		"hyprland/window"
 	],
 	"modules-right" :
 	[
-		"tray",
-		"pulseaudio",
-		"clock"
+		"group/system"
 	],
 
+	// groups
+	"group/system" :
+	{
+		"orientation" : "horizontal",
+		"modules" : 
+		[
+			"tray",
+			"pulseaudio/slider",
+			"pulseaudio",
+			"clock",
+			"group/power"
+		]
+	},
+	"group/power" :
+	{
+		"orientation" : "horizontal",
+		"modules" : 
+		[
+			"custom/power-off",
+			"custom/restart",
+			"custom/lock"
+		],
+		"test" : "test",
+		"drawer" :
+		{
+			"transition-left-to-right" : false
+		},
+	},
 	// modules configuration
+	"custom/power-off" :
+	{
+		"format" : "⏻",
+		"on-click" : "shutdown -P now"
+	},
+	"custom/restart" :
+	{
+		"format" : "",
+		"on-click" : "shutdown -r now"
+	},
+	"custom/lock" :
+	{
+		"format" : "",
+		"on-click" : "hyprlock"
+	},
 	"hyprland/workspaces" : 
 	{
-		"format" : "✦{icon}✦", //{windows}",
+		"format" : "", //{windows}",
 		"format-icons" :
 		{
 			"magic" : "❂"
@@ -46,7 +87,7 @@
    	"pulseaudio":
 	{
         	// "scroll-step": 1, // %, can be a float
-        	"format": "{volume}% {icon} {format_source}",
+        	"format": "{icon} {format_source}",
         	"format-bluetooth": "{volume}% {icon} {format_source}",
         	"format-bluetooth-muted": " {icon} {format_source}",
         	"format-muted": " {format_source}",
@@ -62,5 +103,34 @@
             		"default": ["", "", ""]
         	},
         	"on-click": "pavucontrol"
-    }
+    	},
+	"pulseaudio/slider":
+	{
+		
+	},
+	"clock": 
+	{
+		"format": "{:%m/%d %H:%M} ",
+		"format-alt": "{:%A, %b %d %H:%M} ",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			    "mode"          : "month",
+			    "mode-mon-col"  : 3,
+			    "weeks-pos"     : "right",
+			    "on-scroll"     : 1,
+			    "format": {
+				      "months":     "<span color='#ffead3'><b>{}</b></span>",
+				      "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+				      "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+				      "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+			    },
+		"actions":  {
+			    "on-click-right": "mode",
+			    "on-scroll-up": "tz_up",
+			    "on-scroll-down": "tz_down",
+			    "on-scroll-up": "shift_up",
+			    "on-scroll-down": "shift_down"
+                    }
+	}
 }
