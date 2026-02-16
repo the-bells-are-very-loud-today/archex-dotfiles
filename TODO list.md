@@ -43,19 +43,24 @@
 		- [ ] shutdown group
 		- [ ] others maybe?
 	- [x] improve clock with date
-	- [ ] notifications (via dunst)
+	- [x] notifications (via dunst)
+	- [ ] workspace icons
 	- [ ] improve tray (may just yeet waybar tray and get something better)
 - [x] switch to brave?
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
-- [ ] GET A PASSWORD MANAGER
+- [x] GET A PASSWORD MANAGER
 - [ ] configure wofi?
 	- [ ] dont start multiple instances (diinki vid ref?)
+- [ ] dolphin config
+	- [ ] other file managers?
+	- [ ] zip files?
+	- [ ] open in terminal?
 
 
 ### self-hosting
-- [ ] automated backups (timeshift for arch?)
+- [x] automated backups (timeshift for arch?)
 - [ ] security
     - [ ] fail2ban (ddos protection)
     - [ ] maybe watchtower? research this for arch
@@ -66,7 +71,7 @@
 - [ ] media
     - [ ] immitch
     - [ ] jellyfin
-    - [ ] nextcloue
+    - [ ] nextcloud
 
 ### a e s t h e t i c
 - [x] imrpove hyprland
@@ -90,6 +95,8 @@
 - [ ] wofi
 	- [ ] make pretty
 - [ ] dunst
+	- [ ] make pretty
+- [ ] dolphin
 	- [ ] make pretty
 
 ## long-term

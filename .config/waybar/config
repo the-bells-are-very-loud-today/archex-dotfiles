@@ -38,7 +38,8 @@
 		"modules" : 
 		[
 			"custom/power-off",
-			"custom/restart"
+			"custom/restart",
+			"custom/lock"
 		],
 		"test" : "test",
 		"drawer" :
@@ -56,6 +57,11 @@
 	{
 		"format" : "",
 		"on-click" : "shutdown -r now"
+	},
+	"custom/lock" :
+	{
+		"format" : "",
+		"on-click" : "hyprlock"
 	},
 	"hyprland/workspaces" : 
 	{

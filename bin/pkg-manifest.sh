@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 # pkg-manifest.sh -- get package manifests
 
-OUTDIR="$HOME/notes/package-manifests"
+OUTDIR="$HOME/audits/package-manifests"
 date=$(date +%Y-%m-%d)
 
 mkdir -p "$OUTDIR"
