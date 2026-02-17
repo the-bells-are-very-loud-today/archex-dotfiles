@@ -8,9 +8,10 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+path+=("$HOME/bin" "$HOME/src/aur/eww/target/release")
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/src/aur/eww/target/release:$PATH"
+export PATH
 export FZF_BASE="/usr/bin/fzf"
 export FZF_DEFAULT_COMMAND="fzf"
 DISABLE_FZF_AUTO_COMPLETION="false"
