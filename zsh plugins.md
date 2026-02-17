@@ -7,7 +7,7 @@
 - [x] copybuffer, copyfile, copypath: handy clipboard utils
 - [ ] docker: autocomplete and alias for docker (which I may want later '~')
 - [ ] emoji - maybe i want emojis in my terminal? probably BLOAT
-- [ ] fzf: maybe this will be nice if I get fzf
+- [x] fzf: maybe this will be nice if I get fzf
 - [ ] history-substring-search: may be a good CL history search...
 - [ ] starship: interested in this prompt..
 - [x] sudo: for prefixing previous command with sudo
