@@ -1,4 +1,1 @@
-while true; do
-	playerstatus=$(playerctl -p ncspot status)
-	echo $playerstatus
-done
+echo (playerctl -p ncspot status)

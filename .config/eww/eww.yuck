@@ -2,7 +2,7 @@
 (deflisten scroll "~/.files/.archhex-dotfiles/.config/eww/scripts/scroll.sh")
 (defvar scroll_width 230)
 (deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
-(deflisten playing :interval "1s"
+(defpoll playing :interval "1s"
 		:initial "No players found"
 '/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/player-status.sh')
 (deflisten metadata :interval "1s"
