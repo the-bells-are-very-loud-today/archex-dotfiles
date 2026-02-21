@@ -7,3 +7,4 @@ alias gc="git commit --verbose --message"
 alias vi=nvim
 alias vid="nvim -d"
 alias sp="_ chmod 660 /dev/tty && ncspot"
+alias als="alias | fzf"
