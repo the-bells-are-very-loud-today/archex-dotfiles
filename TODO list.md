@@ -45,6 +45,7 @@
 	- [x] improve clock with date
 	- [x] notifications (via dunst)
 	- [ ] workspace icons
+    - [ ] make custom random decider widget
 	- [ ] improve tray (may just yeet waybar tray and get something better)
 - [x] switch to brave?
 - [ ] get a better git tree viewer?
@@ -101,7 +102,6 @@
 
 ## long-term
 ### research
-- [ ] GTK/QT theme
 - [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 - [ ] dark/light mode?
 - [ ] look into configuring dolhpin, or potentialyl get another file explorer? probably that and configure it
