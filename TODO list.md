@@ -40,11 +40,12 @@
 			- [ ] network
 			- [ ] gpu
 			- [ ] cpu
-		- [ ] shutdown group
+		- [x] shutdown group
 		- [ ] others maybe?
 	- [x] improve clock with date
 	- [x] notifications (via dunst)
 	- [ ] workspace icons
+    - [ ] make custom random decider widget
 	- [ ] improve tray (may just yeet waybar tray and get something better)
 - [x] switch to brave?
 - [ ] get a better git tree viewer?
@@ -52,7 +53,7 @@
 	- [ ] find all dependancies hopefully
 - [x] GET A PASSWORD MANAGER
 - [ ] configure wofi?
-	- [ ] dont start multiple instances (diinki vid ref?)
+	- [x] dont start multiple instances (diinki vid ref?)
 - [ ] dolphin config
 	- [ ] other file managers?
 	- [ ] zip files?
@@ -101,13 +102,12 @@
 
 ## long-term
 ### research
-- [ ] GTK/QT theme
 - [ ] better cursour please posy maybe maybe match theme better maybe tweak posy?
 - [ ] dark/light mode?
 - [ ] look into configuring dolhpin, or potentialyl get another file explorer? probably that and configure it
 - [ ] further kitty configuration maybe?
 - [ ] look into further nvim/zsh configatuation
-- [ ] look into other programs that would be good? discord? etc?
+- [ ] look into other programs that would be good?
 ### functional
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)

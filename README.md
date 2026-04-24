@@ -15,7 +15,6 @@ my first arch rice
 - dunst
 - wl-clipboard
 #### Extras
-- vim
 - nvim
 - zsh
 - oh-my-zsh
