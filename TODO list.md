@@ -40,7 +40,7 @@
 			- [ ] network
 			- [ ] gpu
 			- [ ] cpu
-		- [ ] shutdown group
+		- [x] shutdown group
 		- [ ] others maybe?
 	- [x] improve clock with date
 	- [x] notifications (via dunst)
@@ -107,7 +107,7 @@
 - [ ] look into configuring dolhpin, or potentialyl get another file explorer? probably that and configure it
 - [ ] further kitty configuration maybe?
 - [ ] look into further nvim/zsh configatuation
-- [ ] look into other programs that would be good? discord? etc?
+- [ ] look into other programs that would be good?
 ### functional
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)
