@@ -53,7 +53,7 @@
 	- [ ] find all dependancies hopefully
 - [x] GET A PASSWORD MANAGER
 - [ ] configure wofi?
-	- [ ] dont start multiple instances (diinki vid ref?)
+	- [x] dont start multiple instances (diinki vid ref?)
 - [ ] dolphin config
 	- [ ] other file managers?
 	- [ ] zip files?
