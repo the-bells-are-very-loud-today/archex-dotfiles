@@ -1,0 +1,71 @@
+* {
+  font-family: Maple Mono;
+  background: transparent;
+  color: --wofi-color1;
+}
+
+#window {
+  color: --wofi-color1;
+  border-color: --wofi-color1;
+  border-style: solid;
+  border-width: 0px;
+
+  /*Linear gradient background instead of standard background, because it makes cleaner border-radius cuts, issa bug :p*/
+  background-image: linear-gradient(to bottom, --wofi-color9 100%);
+}
+#scroll {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: --wofi-color1;
+}
+#inner-box {
+  padding-top: 12px;
+}
+#entry {
+  border-style: none;
+  border-color: --wofi-color1;
+  color: --wofi-color1;
+  padding: 6px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12;
+
+  border-radius: 12px;
+}
+
+#entry:selected {
+  background: --wofi-color0;
+  color: --wofi-color1;
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-color: --wofi-color9;
+  color: --wofi-color1;
+  border-color: --wofi-color1;
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+
+  font-style: normal;
+
+  border-radius: 8;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding: 12px;
+  margin: 8px;
+}
+#input:focus {
+  background: --wofi-color0;
+  background-color: --wofi-color0;
+  border-color: --wofi-color-14;
+  font-style: italic;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}

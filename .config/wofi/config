@@ -1,0 +1,9 @@
+term=kitty
+location=center
+width=600
+lines=6
+color=/home/bells/.cache/wal/colors
+allow_markup=true
+allow_images=true
+line_wrap=word
+normal_window=true
