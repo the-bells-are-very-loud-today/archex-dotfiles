@@ -41,7 +41,7 @@
 		:class "center"
 		:orientation "h"
 		:halign "center"
-		:width 500
+		:width 550
 		:space-evenly true
 		(gel)
 	)
@@ -68,7 +68,7 @@
 		(box
 			:class "controls"
 		:space-evenly true
-		:width 70
+		:width 80
 		:height 20
 		(button :onclick "playerctl previous"
 		"")
