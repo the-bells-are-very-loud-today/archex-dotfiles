@@ -1,1 +1,1 @@
-echo (playerctl -p ncspot status)
+echo $(playerctl -p ncspot status)
