@@ -1,15 +1,15 @@
+@import url("../../.cache/wal/colors-waybar.css");
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     all: unset;
-    font-family: "RobotoMono Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-family: "Maple Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
 }
-
 window#waybar 
 {
 	background-color: rgba(19, 14, 20, 0);
 	border-top: 0px solid transparent; 
-	color: #BBA8F2;
+	color: @foreground;
 	transition-property: background-color;
 	transition-duration: .25s;
 	/*background-image: linear-gradient(to top, rgba(19, 14, 20, 0) 0%, rgba(19, 14, 20, 0.6)100%);*/
@@ -28,7 +28,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: @background;
 }
 
 window#waybar.chromium {
@@ -45,7 +45,7 @@ button {
     margin-top: -1px;
     padding: 1px 3px;
     background-color: transparent;
-    color: #BBA8F2;
+    color: @foreground;
 
 }
 
@@ -55,39 +55,35 @@ button:hover {
     /*box-shadow: 0 3px #ff00ff;*/
 }
 
-/* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #B28CC2;
-}
 
 #workspaces button {
-    	background-color: #130E14;
+    	background-color: @color10;
 	margin-left: 7px;
 	margin-right: 7px;
 	min-width: 40px;
-	box-shadow: 0px 0px 4px 1px #000000;
+	box-shadow: 0px 0px 4px 1px @color0;
 }
 
 #workspaces button:hover {
-    background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
-    color: #130E14;
+    background: @color2;/*rgba(200, 50, 200, 0.3);*/
+    color: @color0;
     text-shadow: inherit;
 }
 
 #workspaces button.active {
-    background-color: #DFAEF2;
-    color: #26192B;
+    background-color: @color11;
+    color: @color0;
     min-width: 50px;
     margin-left: 2px;
     margin-right: 2px;
 }
 #workspaces button.active:hover {
-    background: #B28CC2;/*rgba(200, 50, 200, 0.3);*/
-    color: #130E14;
+    background: @color3;/*rgba(200, 50, 200, 0.3);*/
+    color: @background;
     text-shadow: inherit;
 }
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @color1;
 }
 
 #mode {
@@ -135,63 +131,13 @@ button:hover {
 
 #system {
 	margin-top: 6px;
-	background-color: #130E14;
+	background-color: @color10;
 	border-radius:6px;
 	margin-right: 4px;
 	margin-bottom: 4px;
-	padding : 0px;
+	padding : 4px;
 
 }
-#power {
-	padding-right: 6px;
-}
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
 label:focus {
     background-color: #000000;
 }
@@ -209,52 +155,15 @@ label:focus {
     background-color: #964B00;
 }
 
-#backlight {
-    background-color: #90b1b1;
-}
-
 #network {
-    background-color: #2980b9;
+    background-color: @color10;
+    color: @color0;
 }
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-#pulseaudio 
-{
-    	background-color: #130E14;
-    	color: #BBA8F2;
-    	background-color: #130E14;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
 
 #temperature {
     background-color: #f0932b;
@@ -277,89 +186,30 @@ label:focus {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
-
-#idle_inhibitor {
-    background-color: #2d3436;
+#pulseaudio 
+{
+    	background-color: @color10;
+    	color: @color0;
+	border-radius: 6px;
+	margin-left: 2px;
 }
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: @color0;
+    color: @color10;
 }
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
+#pulseaudio.muted {
+    background-color: @color15;
+    color: @color10;
+    margin-left: 4px;
 }
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
+#pulseaudio.muted:hover {
+	background-color: @color0;
+	color: @color8;
 }
 #pulseaudio-slider {
-    padding-left: 6px;
     margin-top: 0px;
-    background-color: #130E14;
+    background-color: @color10;
     border-radius: 5px;
 }
 #pulseaudio-slider slider {
@@ -375,16 +225,34 @@ label:focus {
     min-width: 80px;
     border-width: 0px;
     border-radius: 5px;
-    background-color: black;
+    background-color: @color0;
 }
 #pulseaudio-slider highlight {
     min-width: 10px;
     border-radius: 5px;
     border-width: 0px;
-    background-image: linear-gradient(72deg,  #D18AEC, #DFAEF2); 
+    background-image: linear-gradient(72deg,  @color6, @color14); 
+}
+#clock
+{
+    color: @color0;
+    margin-left: 2px;
+}
+#power {
+	color: @color10;
+	padding-right: 6px;
+	padding-left: 6px;
+	background-color: @color0;
+	border-radius: 6px;
 }
 #custom-power-off
 {
+	padding-right: 6px;
+}
+#custom-lock
+{
+	padding-right: 6px;
+
 }
 #custom-restart
 {
