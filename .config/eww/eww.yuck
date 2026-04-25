@@ -68,7 +68,8 @@
 		(box
 			:class "controls"
 		:space-evenly true
-		:width 60
+		:width 70
+		:height 20
 		(button :onclick "playerctl previous"
 		"")
 		(button :onclick "playerctl play-pause":class "play-pause"
@@ -87,9 +88,7 @@
 		:orientation "h"
 		:width {playing != "" ? scroll_width : 100}
 		(scroll :hscroll false :active true
-		    (box :space-evenly true
-			(label :class "metadata" :text {playing == "" ? "g e l" : metadata})
-		    )
+			(box :class "metadata" (button :onclick "eww close bar" {playing == '' ? 'g e l' : metadata}))
 		)
 	)
 )
