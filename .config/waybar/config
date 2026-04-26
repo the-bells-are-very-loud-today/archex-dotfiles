@@ -33,6 +33,23 @@
 			"group/power"
 		]
 	},
+	"group/tools" :
+	{
+		"orientation" : "horizontal",
+		"modules" :
+		[
+			"custom/tooldrawer"
+		],
+		"drawer" :
+		{
+			"click-to-reveal" : true,
+			"transition-left-to-right" : false,
+		}
+	},
+	"custom/tooldrawer" : 
+	{
+		"format" : "",
+	},
 	"group/power" :
 	{
 		"orientation" : "horizontal",

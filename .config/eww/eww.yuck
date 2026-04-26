@@ -54,7 +54,7 @@
 		:halign "center"
 		(box
 		:class "left"
-		:style "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
+		:style {playing == "Playing" ? "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-left: 10px"}
 		)
 		(box
 		:orientation "horizontal"
@@ -70,16 +70,16 @@
 		:space-evenly true
 		:width 80
 		:height 20
-		(button :onclick "playerctl previous"
+		(button :onclick "playerctl -p ncspot previous"
 		"")
-		(button :onclick "playerctl play-pause":class "play-pause"
+		(button :onclick "playerctl -p ncspot play-pause":class "play-pause"
 		{playing == "Playing" ? "" : ""}
 			)
-		(button :onclick "playerctl next"
+		(button :onclick "playerctl -p ncspot next"
 		"")
 		))
 		(box :class "right"
-		:style "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px"
+		:style {playing == "Playing" ? "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-right: 10px"}
 		)
 	)
 )
