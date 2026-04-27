@@ -52,7 +52,7 @@
 - [ ] start a more comprehensive readme for git repo
 	- [ ] find all dependancies hopefully
 - [x] GET A PASSWORD MANAGER
-- [ ] configure wofi?
+- [x] configure wofi?
 	- [x] dont start multiple instances (diinki vid ref?)
 - [ ] dolphin config
 	- [ ] other file managers?
@@ -63,7 +63,7 @@
 ### self-hosting
 - [x] automated backups (timeshift for arch?)
 - [ ] security
-    - [ ] fail2ban (ddos protection)
+    - [x] fail2ban (ddos protection)
     - [ ] maybe watchtower? research this for arch
     - [ ] crowdsec
     - [ ] authelia
@@ -82,7 +82,7 @@
 	- [x] shadow
 	- [x] workspace wraparound
 - [ ] improve waybar
-	- [ ] not ugly, but not perfect yet for a general vibe
+	- [x] not ugly, but not perfect yet for a general vibe
 	- [ ] and fun css animations etc
 	- [ ] indoctrinate aesthetics of functional stuff added above
 - [x] zsh
@@ -93,8 +93,8 @@
 - [ ] cava!
 	- [ ] make pwetty 
 	- [ ] shaders?
-- [ ] wofi
-	- [ ] make pretty
+- [x] wofi
+	- [x] make pretty
 - [ ] dunst
 	- [ ] make pretty
 - [ ] dolphin
@@ -112,6 +112,8 @@
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)
 - [ ] try gamemaker? 
+- [ ] bash sctipting!! 
+	- [ ] dancing tenna playing green room
 - [x] self hosted memos pls
 ### a e s t h e t i c
 - [ ] further htop config? 

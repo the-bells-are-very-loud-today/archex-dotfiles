@@ -25,12 +25,38 @@
 		"orientation" : "horizontal",
 		"modules" : 
 		[
+			"group/tools",
 			"tray",
 			"pulseaudio/slider",
 			"pulseaudio",
 			"clock",
+			"network",
 			"group/power"
 		]
+	},
+	"group/tools" :
+	{
+		"orientation" : "horizontal",
+		"modules" :
+		[
+			"custom/tooldrawer",
+			"custom/gel"
+		],
+		"drawer" :
+		{
+			"click-to-reveal" : true,
+			"transition-left-to-right" : false,
+		}
+	},
+	"custom/tooldrawer" : 
+	{
+		"format" : "",
+	},
+	"custom/gel" :
+	{
+		"format" : "",
+		"on-click" : "eww open bar",
+		"on-click-right" : "eww close bar"
 	},
 	"group/power" :
 	{
@@ -41,7 +67,6 @@
 			"custom/restart",
 			"custom/lock"
 		],
-		"test" : "test",
 		"drawer" :
 		{
 			"transition-left-to-right" : false
@@ -65,9 +90,10 @@
 	},
 	"hyprland/workspaces" : 
 	{
-		"format" : "", //{windows}",
+		"format" : "",
 		"format-icons" :
 		{
+			"1" : "",
 			"magic" : "❂"
 		},
 		"format-window-separator": " | ",
@@ -76,7 +102,15 @@
 		{
 			"kitty" : ""
 		},
-		"show-special" : true
+		//"show-special" : true,
+		"persistent-workspaces":  
+		{
+			"1" : [],
+			"2" : [],
+			"3" : [],
+			"4" : [],
+			"5" : [],
+		}
 	},
 	"hyprland/submap" :
 	{
@@ -90,8 +124,8 @@
         	"format": "{icon} {format_source}",
         	"format-bluetooth": "{volume}% {icon} {format_source}",
         	"format-bluetooth-muted": " {icon} {format_source}",
-        	"format-muted": " {format_source}",
-        	"format-source": "{volume}% ",
+        	"format-muted": "󰟎 {format_source}",
+        	"format-source": " {volume}% ",
         	"format-source-muted": "",
         	"format-icons": {
             		"headphone": "",
@@ -102,7 +136,8 @@
             		"car": "",
             		"default": ["", "", ""]
         	},
-        	"on-click": "pavucontrol"
+        	"on-click-right": "pavucontrol",
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     	},
 	"pulseaudio/slider":
 	{
@@ -110,8 +145,8 @@
 	},
 	"clock": 
 	{
-		"format": "{:%m/%d %H:%M} ",
-		"format-alt": "{:%A, %b %d %H:%M} ",
+		"format": "{:%m/%d %H:%M} |",
+		"format-alt": "{:%A, %b %d %H:%M} |",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
 			    "mode"          : "month",
@@ -132,5 +167,17 @@
 			    "on-scroll-up": "shift_up",
 			    "on-scroll-down": "shift_down"
                     }
+	},
+	"network":
+	{
+	    "format": "{ifname}",
+	    "format-wifi": "{essid} ({signalStrength}%) ",
+	    "format-ethernet": "",
+	    "format-disconnected": "󰖪", //An empty format will hide the module.
+	    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+	    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+	    "tooltip-format-ethernet": "{ifname} ",
+	    "tooltip-format-disconnected": "Disconnected",
+	    "max-length": 50
 	}
 }
