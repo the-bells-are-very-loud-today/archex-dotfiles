@@ -1,10 +1,13 @@
 (defvar gel-speed "12s")
+(defvar on true)
 (defvar scroll_width 230)
 (deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
 (defpoll playing :interval "1s"
+		:run-while on
 		:initial "No players found"
 '/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/player-status.sh')
 (defpoll metadata :interval "1s"
+		:run-while on
 		:initial "No players found"
 '/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/metadata.sh')
 (defwindow bar
@@ -41,54 +44,59 @@
 		:class "center"
 		:orientation "h"
 		:halign "center"
-		:width 550
+		:width {on ? 550 : 10}
 		:space-evenly true
 		(gel)
 	)
 )
 (defwidget gel []
 	(centerbox
-		:class "gel"
-		:style {playing == "Playing" ? "color: @color12; text-shadow: 0 0 4px @color0; background-image: linear-gradient(73deg,@color9, @color10 ${search(cava-data, '[0-9]+')[1] + (50 - (search(cava-data, '[0-9]+')[2]))}%, @color11)" : "color: @color12; text-shadow: 0 0 4px @color0; background-image: linear-gradient(73deg, @color9, @color10, @color11)"} 
+		:class {on ? "gel" : "gel collapsed"}
+		:style {playing == "Playing" && on  ? "color: @color12; text-shadow: 0 0 4px @color0; background-image: linear-gradient(73deg,@color9, @color10 ${search(cava-data, '[0-9]+')[1] + (50 - (search(cava-data, '[0-9]+')[2]))}%, @color11)" : "color: @color12; text-shadow: 0 0 4px @color0; background-image: linear-gradient(73deg, @color9, @color10, @color11); "} 
 		:orientation "horizontal"
 		:halign "center"
 		(box
 		:class "left"
-		:style {playing == "Playing" ? "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-left: 10px"}
+		:style {playing == "Playing" && on ? "padding-left: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-left: 10px"}
 		)
 		(box
 		:orientation "horizontal"
 		:halign "center"
 		:space-evenly false
-		(button :onclick "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh"
+		(button :onclick {on ? "~/.files/.archhex-dotfiles/.config/eww/scripts/goto-spotify.sh" : ""}
 			:class "spotify"
+			:style {on ? "margin-left: 6px" : "margin-left: 0px"}
 			:halign "center"
-		"")
+		{on ? "" : ""})
 		(music-info)
 		(box
 			:class "controls"
 		:space-evenly true
-		:width 80
+		:width {on ? 80 : 0}
 		:height 20
-		(button :onclick "playerctl -p ncspot previous"
-		"")
-		(button :onclick "playerctl -p ncspot play-pause":class "play-pause"
-		{playing == "Playing" ? "" : ""}
+		:stlye {on ? "margin-left: 30px" : "margin-left: 0px"}
+		(button :onclick {on ? "playerctl -p ncspot previous" : ""}
+		{on ? "" : ""})
+		(button :onclick {on ? "playerctl -p ncspot play-pause" : ""} :class "play-pause"
+		{on ? playing == 'Playing' ? '' : '' : ""}
 			)
-		(button :onclick "playerctl -p ncspot next"
-		"")
+		(button :onclick {on ? "playerctl -p ncspot next" : ""}
+		{on ? "" : ""})
 		))
 		(box :class "right"
-		:style {playing == "Playing" ? "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-right: 10px"}
+		:style {playing == "Playing" && on ? "padding-right: ${10 + (search(cava-data, "[0-9]+")[0]/3)}px" : "padding-right: 10px"}
 		)
 	)
 )
 (defwidget music-info []
 	(box
 		:orientation "h"
-		:width {playing != "" ? scroll_width : 100}
+		:width {on ? playing != "" ? scroll_width : 100 : 9}
 		(scroll :hscroll false :active true
-			(box :class "metadata" (button :onclick "eww close bar" {playing == '' ? 'g e l' : metadata}))
+			(box :class "metadata" 
+				:style {on ? "margin-left: 60px;" : "margin-left: 0px;"}
+				(button :onclick {on ? "eww update on=false" : "eww update on=true"} {on ? playing != '' ? metadata: 'g e l' : '    '})
+			)
 		)
 	)
 )
