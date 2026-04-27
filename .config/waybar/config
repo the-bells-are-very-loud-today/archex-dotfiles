@@ -25,6 +25,7 @@
 		"orientation" : "horizontal",
 		"modules" : 
 		[
+			"group/tools",
 			"tray",
 			"pulseaudio/slider",
 			"pulseaudio",
@@ -38,7 +39,8 @@
 		"orientation" : "horizontal",
 		"modules" :
 		[
-			"custom/tooldrawer"
+			"custom/tooldrawer",
+			"custom/gel"
 		],
 		"drawer" :
 		{
@@ -49,6 +51,12 @@
 	"custom/tooldrawer" : 
 	{
 		"format" : "",
+	},
+	"custom/gel" :
+	{
+		"format" : "",
+		"on-click" : "eww open bar",
+		"on-click-right" : "eww close bar"
 	},
 	"group/power" :
 	{

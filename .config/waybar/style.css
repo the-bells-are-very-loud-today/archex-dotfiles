@@ -41,7 +41,7 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 6px;
+    border-radius: 50px;
     margin-top: -1px;
     padding: 1px 3px;
     background-color: transparent;
@@ -116,7 +116,7 @@ button:hover {
 {
 	background-color: transparent;
 	padding: 8px;
-	border-radius: 6px;
+	border-radius: 50px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -132,7 +132,7 @@ button:hover {
 #system {
 	margin-top: 6px;
 	background-color: @color10;
-	border-radius:6px;
+	border-radius: 50px;
 	margin-right: 4px;
 	margin-bottom: 4px;
 	padding : 4px;
@@ -188,9 +188,10 @@ label:focus {
 }
 #pulseaudio 
 {
+	transition: color 0.5s, background-color 0.5s;
     	background-color: @color10;
     	color: @color0;
-	border-radius: 6px;
+	border-radius: 50px;
 	margin-left: 2px;
 }
 /* you can set a style on hover for any module like this */
@@ -210,7 +211,7 @@ label:focus {
 #pulseaudio-slider {
     margin-top: 0px;
     background-color: @color10;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 #pulseaudio-slider slider {
     min-height: 0px;
@@ -218,18 +219,18 @@ label:focus {
     background-image: none;
     border: none;
     box-shadow: none;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 #pulseaudio-slider trough {
     min-height: 8px;
     min-width: 80px;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: @color0;
 }
 #pulseaudio-slider highlight {
     min-width: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     border-width: 0px;
     background-image: linear-gradient(72deg,  @color6, @color14); 
 }
@@ -243,7 +244,7 @@ label:focus {
 	padding-right: 6px;
 	padding-left: 6px;
 	background-color: @color0;
-	border-radius: 6px;
+	border-radius: 50px;
 }
 #custom-power-off
 {
