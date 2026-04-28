@@ -1,0 +1,18 @@
+
+wallpaper=$1
+args=""
+case $wallpaper in
+	/home/bells/pictures/wallpapers/blackhole.jpg | /home/bells/pictures/wallpapers/pastel-purple.jpg)	
+		args="--theme HEX" ;;
+	home/bells/pictures/wallpapers/misty_stars.png)
+		args="-i $wallpaper --contrast 15.0 --cols16" ;;
+	~/pictures/wallpapers/shadow-of-rila.png)
+		args=" -i $wallpaper --contrast 21.0 --backend colorthief --cols16" ;;
+
+	*)
+		args="-i $wallpaper --cols16" ;;
+esac
+
+wal $args
+awww img $wallpaper
+/home/bells/bin/pywal-postrun.sh
