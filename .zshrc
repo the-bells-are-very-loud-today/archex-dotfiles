@@ -13,7 +13,7 @@ path+=("$HOME/bin" "$HOME/src/aur/eww/target/release")
 export ZSH="$HOME/.oh-my-zsh"
 export PATH
 export FZF_BASE="/usr/bin/fzf"
-export FZF_DEFAULT_COMMAND="fzf"
+# export FZF_DEFAULT_COMMAND="fzf"
 DISABLE_FZF_AUTO_COMPLETION="false"
 DISABLE_FZF_KEY_BINDINGS="false"
 # Set name of the theme to load --- if set to "random", it will

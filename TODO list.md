@@ -1,4 +1,4 @@
-## Initial
+q## Initial
 ### functional
 - [ ] zsh
 	- [x] tweak git aliases 
