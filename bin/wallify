@@ -1,0 +1,21 @@
+
+wallpaper=$1
+args=""
+case $wallpaper in
+	/home/bells/pictures/wallpapers/blackhole.jpg | /home/bells/pictures/wallpapers/pastel-purple.jpg | /home/bells/pictures/wallpapers/obscured_sky.jpg)
+		args="--theme HEX" ;;
+	/home/bells/pictures/wallpapers/misty_stars.png)
+		args="-i $wallpaper --contrast 15.0 --cols16" ;;
+	/home/bells/pictures/wallpapers/shadow-of-rila.png | /home/bells/pictures/wallpapers/siviya-for-boobie.png)
+		args=" -i $wallpaper --contrast 21.0 --backend colorthief --cols16" ;;
+	/home/bells/pictures/wallpapers/sphere.png)
+		args="-i $wallpaper --contrast 7.0 --cols16" ;;
+	
+
+	*)
+		args="-i $wallpaper --cols16" ;;
+esac
+
+wal $args
+awww img $wallpaper --transition-type center --transition-duration 1.4 --transition-fps 60
+/home/bells/bin/pywal-postrun.sh

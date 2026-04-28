@@ -1,4 +1,2 @@
-while true; do
-	metadata=$(playerctl  metadata -p ncspot -f "{{title}} - {{album}} - {{artist}}")
+	metadata=$(playerctl  metadata -p ncspot -f "{{title}}")
 	echo $metadata
-done
