@@ -28,7 +28,7 @@ case $2 in
 		*w) # wallpapermenu options
 				FZFARGS='ctrl-t:execute-silent(wallpapermenu {} tendency),ctrl-f:execute-silent(wallpapermenu {} flare),ctrl-d:execute-silent(wallpapermenu {} dim),ctrl-g:execute-silent(wallpapermenu {} grove),ctrl-w:execute-silent(wallpapermenu {}),ctrl-e:become(gimp {+} > /dev/null 2>&1)'
 				ILABEL='·.·★⋆⁺₊⋆·.·★⋆⁺₊⋆𝖜𝖆𝖑𝖑𝖕𝖆𝖕𝖊𝖗 𝖒𝖊𝖓𝖚⋆⁺₊⋆★·.·⋆⁺₊⋆★·.·'
-				LABEL='[ᴄᴛʀʟ 𝐰·ᴘʏᴡᴀʟ 𝐝·ᴅɪᴍ 𝐟·ғʟᴀʀᴇ 𝐠·ɢʀᴏᴠᴇ 𝐭·ᴛᴇɴᴅᴇɴᴄʏ]' ;;
+				LABEL='·.·★⋆⁺₊⋆·.·★⋆⁺₊⋆𝖕𝖗𝖊𝖛𝖎𝖊𝖜⋆⁺₊⋆★·.·⋆⁺₊⋆★·.·' ;;
 		*m) # ₊⊹ɪᴍɢᴍɢᴋ⊹₊ options
 				FZFARGS='ctrl-r:become(fzfubrefresh {}),ctrl-e:execute-silent(imgmgk stripexif {})+become(fzfubrefresh {}),alt-j:execute-silent(imgmgk jpg {})+become(fzfubrefresh {}),alt-p:execute-silent(imgmgk png {})+become(fzfubrefresh {}),ctrl-d:execute(rm -i {} && notify-send {} deleted)+become(fzfubrefresh {}),ctrl-s:execute-silent(imgmgk scale {+})+become(fzfubrefresh {}),ctrl-b:execute-silent(imgmgk bw {+})+become(fzfubrefresh {}),ctrl-w:execute-silent(imgmgk wm {+})+become(fzfubrefresh {}),ctrl-g:become(gimp {+} > /dev/null 2>&1),ctrl-t:execute-silent(imgmgk transparency {+})+become(fzfubrefresh {}),ctrl-f:execute-silent(imgmgk flip {+})+become(fzfubrefresh {}),ctrl-v:execute-silent(imgmgk vflip {+})+become(fzfubrefresh {}),ctrl-l:execute-silent(imgmgk border {+})+become(fzfubrefresh {}),ctrl-h:execute-silent(imgmgk wborder {+})+become(fzfubrefresh {})'
 				ILABEL="[ᴀʟᴛ: 𝐣·ᴊᴘɢ 𝐩·ᴘɴɢ | ᴄᴛʀʟ: 𝐝·ᴅᴇʟ 𝐞·ᴇxɪғ 𝐛·ʙ&ᴡ 𝐰·ᴡᴛʀᴍᴀʀᴋ"
