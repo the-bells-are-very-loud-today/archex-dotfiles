@@ -1,4 +1,4 @@
-## Initial
+q## Initial
 ### functional
 - [ ] zsh
 	- [x] tweak git aliases 
@@ -112,6 +112,8 @@
 - [ ] install steam
 - [ ] install components for coding (rust, java, python, c++, others?)
 - [ ] try gamemaker? 
+- [ ] bash sctipting!! 
+	- [ ] dancing tenna playing green room
 - [x] self hosted memos pls
 ### a e s t h e t i c
 - [ ] further htop config? 
