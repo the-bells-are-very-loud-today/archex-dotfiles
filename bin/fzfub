@@ -42,7 +42,7 @@ esac
 
 # run fzf with preview and given vars
 echo $1
-image=$(fzf --walker-root=${1:-$PWD} $3 -m --bind "$FZFARGS" --style ${STYLE:-full} --reverse --preview-border --preview-label "$LABEL" --input-label "$ILABEL" --preview="ueberzugpp cmd -s $SOCKET -i fzfpreview -a add \
+image=$(fzf --walker-root=${1:-$PWD} --delimiter='/' --with-nth=-1 $3 -m --bind "$FZFARGS" --style ${STYLE:-full} --reverse --preview-border --preview-label "$LABEL" --input-label "$ILABEL" --preview="ueberzugpp cmd -s $SOCKET -i fzfpreview -a add \
                             -x \$FZF_PREVIEW_LEFT -y \$FZF_PREVIEW_TOP \
                             --max-width \$FZF_PREVIEW_COLUMNS --max-height \$FZF_PREVIEW_LINES \
 			    -f {} || bat --style=plain--color=always {}") 
