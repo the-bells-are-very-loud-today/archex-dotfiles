@@ -16,7 +16,7 @@ ueberzugpp layer -o kitty --no-stdin --silent --use-escape-codes --pid-file "$UB
 UB_PID=$(cat "$UB_PID_FILE")
 
 export SOCKET="$UEBERZUG_TMP_DIR"/ueberzugpp-"$UB_PID".socket
-
+unset FZF_DEFAULT_COMMAND
 # fzf optional settings:
 # first argument: directory
 # second argument: preset options
