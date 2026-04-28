@@ -17,5 +17,5 @@ case $wallpaper in
 esac
 
 wal $args
-awww img $wallpaper
+awww img $wallpaper --transition-type center --transition-duration 1.4 --transition-fps 60
 /home/bells/bin/pywal-postrun.sh
