@@ -1,0 +1,30 @@
+(defwindow rng
+	:monitor 0
+	:goemetry (geometry
+		:x "0"
+		:y "0"
+		:width "20%"
+		:height "20%"
+		:anchor "center"
+	)
+	:stacking "fg"
+	:exclusive "false"
+	:namespace "rng"
+	:windowtype "dialog"
+	:focusable "true"
+	:reserve (struts :distance "400px" :side "top")
+(rng))
+(defwidget rng []
+	(box
+		:width 80
+		:orientation "v"
+		(input 
+			:placeholder "enter number of sides..."
+			:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
+
+		)
+		(box
+			(label :text "hi")
+		)
+	)
+)
