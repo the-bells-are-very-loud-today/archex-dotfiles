@@ -28,12 +28,12 @@ q## Initial
 - [ ] improve waybar functionality
 	- [x] MPD  ~~playerctl for spotify (hopefully this will also display what's currently playing)~~
 	- [x] cava?
-	- [ ] g e l
+	- [x] g e l
 		- [x] get eww
 		- [x] make beat
 		- [x] make gradient animate to beat
 		- [x] autostart
-		- [ ] open close button
+		- [x] open close button
 	- [ ] hyprland submap indicator
 	- [ ] groups
 		- [ ] hardware group
