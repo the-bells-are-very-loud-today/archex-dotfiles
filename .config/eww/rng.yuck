@@ -15,16 +15,24 @@
 	:reserve (struts :distance "400px" :side "top")
 (rng))
 (defwidget rng []
-	(box
+	(centerbox
 		:width 80
-		:orientation "v"
-		(input 
-			:placeholder "enter number of sides..."
-			:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
-
+		:class "rngbox"
+		:height 90
+		(box
+		    :width 60 
 		)
 		(box
-			(label :text "hi")
+				:height 20
+				:class "input-box"
+				(input 
+					:halign "center"
+					:class "number-input"
+					:placeholder "enter number of sides..."
+					:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
+
+				)
 		)
+		(box)
 	)
 )
