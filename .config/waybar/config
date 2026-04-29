@@ -40,7 +40,8 @@
 		"modules" :
 		[
 			"custom/tooldrawer",
-			"custom/gel"
+			"custom/gel",
+			"custom/rng"
 		],
 		"drawer" :
 		{
@@ -50,13 +51,22 @@
 	},
 	"custom/tooldrawer" : 
 	{
-		"format" : "",
+		"format" : "",
+		"tooltip" : false,
+		
 	},
 	"custom/gel" :
 	{
 		"format" : "",
 		"on-click" : "eww open bar",
+		"tooltip" : false,
 		"on-click-right" : "eww close bar"
+	},
+	"custom/rng" :
+	{
+		"format" : "", 
+		"tooltip" : false,
+		"on-click" : "eww open rng"
 	},
 	"group/power" :
 	{

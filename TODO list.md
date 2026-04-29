@@ -41,12 +41,11 @@ q## Initial
 			- [ ] gpu
 			- [ ] cpu
 		- [x] shutdown group
-		- [ ] others maybe?
+		- [x] others maybe?
 	- [x] improve clock with date
 	- [x] notifications (via dunst)
-	- [ ] workspace icons
-    - [ ] make custom random decider widget
-	- [ ] improve tray (may just yeet waybar tray and get something better)
+    - [x] make custom random decider widget
+	- [x] improve tray (may just yeet waybar tray and get something better)
 - [x] switch to brave?
 - [ ] get a better git tree viewer?
 - [ ] start a more comprehensive readme for git repo
@@ -81,10 +80,10 @@ q## Initial
 	- [x] dimming?
 	- [x] shadow
 	- [x] workspace wraparound
-- [ ] improve waybar
+- [x] improve waybar
 	- [x] not ugly, but not perfect yet for a general vibe
-	- [ ] and fun css animations etc
-	- [ ] indoctrinate aesthetics of functional stuff added above
+	- [x] and fun css animations etc
+	- [x] indoctrinate aesthetics of functional stuff added above
 - [x] zsh
 	- [x] better prompt 
 		- [x] (transient?) 
