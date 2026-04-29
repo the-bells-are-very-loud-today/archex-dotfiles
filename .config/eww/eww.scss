@@ -4,7 +4,6 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: "Maple Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     /*font-family: "FontAwesome", FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-    font-size: 15px;
     transition: width 2s ease;
 
 //    font-weight: 600;
@@ -48,4 +47,22 @@
 .music-info
 {
     transition:  2s ease;
+}
+.rngbox
+{
+  border-radius: 6px;
+
+}
+.number-input
+{
+}
+.input-box
+{
+  font-size: 60px;
+  padding: 12px 0px 12px 0px;
+}
+.rng-label
+{
+  font-size: 17px;
+  padding: 6px 8px 6px 8px;
 }

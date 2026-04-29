@@ -1,0 +1,50 @@
+(defwindow rng
+	:monitor 0
+	:goemetry (geometry
+		:x "0"
+		:y "0"
+		:width "20%"
+		:height "20%"
+		:anchor "center"
+	)
+	:stacking "fg"
+	:exclusive "false"
+	:namespace "rng"
+	:windowtype "dialog"
+	:focusable "true"
+	:reserve (struts :distance "400px" :side "top")
+(rng))
+(defwidget rng []
+	(box
+		:class "rngbox"
+		(box
+				:height 10
+				:class "titlebox"
+				:orientation "v"
+				:space-evenly false
+				:width 220
+				:style "border: 3px solid @color10; background-color: @color0; color: @color0; border-radius: 6px;"
+				(label
+						:style "background-color: @color8;"
+						:text "·★⋆⁺₊⋆𝖑𝖎𝖑𝖞'𝖘 𝖗𝖓𝖌⋆⁺₊⋆★·"
+						:class "rng-label"
+				)
+		
+				(eventbox :onhoverlost "eww close rng"
+						(box
+								:width 1
+								:class "input-box"
+								:style "color: @color9; background-color: @color0; border-radius: 0px 0px 6px 6px;"
+								(input 
+									:halign "center"
+									:class "number-input"
+									:style "background-color: @color0;"
+ 									:placeholder "enter number of sides..."
+									:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
+
+								)
+						)
+				)
+		)
+	)
+)

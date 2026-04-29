@@ -10,6 +10,7 @@
 		:run-while on
 		:initial "No players found"
 '/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/metadata.sh')
+(include "/home/bells/.files/.archhex-dotfiles/.config/eww/rng.yuck")
 (defwindow bar
 	:monitor 0
 	:geometry (geometry 
