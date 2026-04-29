@@ -182,6 +182,7 @@ label:focus {
 }
 #custom-tooldrawer {
     color: @color0;
+	margin-right: 6px;
 }
 #custom-gel {
     color: @color0;
