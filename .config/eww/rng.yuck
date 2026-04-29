@@ -15,24 +15,36 @@
 	:reserve (struts :distance "400px" :side "top")
 (rng))
 (defwidget rng []
-	(centerbox
-		:width 80
+	(box
 		:class "rngbox"
-		:height 90
 		(box
-		    :width 60 
-		)
-		(box
-				:height 20
-				:class "input-box"
-				(input 
-					:halign "center"
-					:class "number-input"
-					:placeholder "enter number of sides..."
-					:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
+				:height 10
+				:class "titlebox"
+				:orientation "v"
+				:space-evenly false
+				:width 220
+				:style "border: 3px solid @color10; background-color: @color0; color: @color0; border-radius: 6px;"
+				(label
+						:style "background-color: @color8;"
+						:text "·★⋆⁺₊⋆𝖑𝖎𝖑𝖞'𝖘 𝖗𝖓𝖌⋆⁺₊⋆★·"
+						:class "rng-label"
+				)
+		
+				(eventbox :onhoverlost "eww close rng"
+						(box
+								:width 1
+								:class "input-box"
+								:style "color: @color9; background-color: @color0; border-radius: 0px 0px 6px 6px;"
+								(input 
+									:halign "center"
+									:class "number-input"
+									:style "background-color: @color0;"
+ 									:placeholder "enter number of sides..."
+									:onaccept "/home/bells/.files/.archhex-dotfiles/.config/eww/scripts/getrng.sh {} && eww close rng"
 
+								)
+						)
 				)
 		)
-		(box)
 	)
 )
