@@ -6,11 +6,12 @@ case $wallpaper in
 		args="--theme HEX" ;;
 	/home/bells/pictures/wallpapers/misty_stars.png)
 		args="-i $wallpaper --contrast 15.0 --cols16" ;;
-	/home/bells/pictures/wallpapers/shadow-of-rila.png | /home/bells/pictures/wallpapers/siviya-for-boobie.png)
+	/home/bells/pictures/wallpapers/shadow-of-rila.png | /home/bells/pictures/wallpapers/siviya-for-boobie.png | /home/bells/pictures/wallpapers/shay.png)
 		args=" -i $wallpaper --contrast 21.0 --backend colorthief --cols16" ;;
 	/home/bells/pictures/wallpapers/sphere.png)
 		args="-i $wallpaper --contrast 7.0 --cols16" ;;
 	
+		
 
 	*)
 		args="-i $wallpaper --cols16" ;;
