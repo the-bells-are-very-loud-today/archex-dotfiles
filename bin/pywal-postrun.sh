@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#reloads eww midgets to match theme
-eww reload
 #sets obsidian theme to pywal theme
 /home/bells/bin/pywal-obsidianmd/pywal-obsidianmd.sh "/home/bells/.files/.archhex-dotfiles"
 #update waybar
@@ -13,3 +11,5 @@ pkill -SIGUSR2 waybar
 cp ~/.cache/wal/colors-cava.conf ~/.config/cava/config
 
 pkill -USR2 cava # Reloads cava's colorscheme configuration
+#reloads eww midgets to match theme
+eww reload
