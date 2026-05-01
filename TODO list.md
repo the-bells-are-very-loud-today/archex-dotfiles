@@ -7,14 +7,14 @@ q## Initial
 	- [ ] add custom aliases?
 	- [x] install some [[zsh plugins|plugins]]
 - [ ] improve hyprland 
-	- [ ] hotkeys
+	- [x] hotkeys
 		- [x] open terminals
 		- [x] close windows
 		- [x] open browser
 		- [x] move windows in layout
 		- [x] moving windows to workspace with and without moving me there too
 		- [x] pinned windows? no thanks floating wiondows? cringe??
-		- [ ] try to configure fn keys (volume must ff rw playpause)
+		- [x] try to configure fn keys (volume must ff rw playpause)
 		- [x] look through options for more...
 		- [x] change exit to uwsm stop
 		- [x] groupings? no thanks
