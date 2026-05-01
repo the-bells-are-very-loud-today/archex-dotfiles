@@ -180,7 +180,7 @@
 	},
 	"network":
 	{
-	    "format": "{ifname}",
+	    "format": "", //setting eth as default for now, since eth is broken until waybar patch
 	    "format-wifi": "{essid} ({signalStrength}%) ",
 	    "format-ethernet": "",
 	    "format-disconnected": "󰖪", //An empty format will hide the module.
