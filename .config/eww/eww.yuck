@@ -1,7 +1,7 @@
 (defvar gel-speed "12s")
 (defvar on true)
 (defvar scroll_width 230)
-(deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
+(deflisten cava-data :initial "0,0,0,0,0" 'cat ~/.cache/gel.fifo')
 (defpoll playing :interval "1s"
 		:run-while on
 		:initial "No players found"

@@ -8,3 +8,4 @@ Proton Mail*
 .config/pulse/*-volumes-*
 .obsidian/*
 bin/pywal-obsidianmd/
+.config/htop
