@@ -180,10 +180,12 @@
 	},
 	"network":
 	{
-	    "format": "", //setting eth as default for now, since eth is broken until waybar patch
+	    "format": "{ifname}", //setting eth as default for now, since eth is broken until waybar patch
 	    "format-wifi": "{essid} ({signalStrength}%) ",
+		"format-disabled": "a bloo hoo", 
 	    "format-ethernet": "",
 	    "format-disconnected": "󰖪", //An empty format will hide the module.
+		"format-linked" : "",
 	    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
 	    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
 	    "tooltip-format-ethernet": "{ifname} ",
