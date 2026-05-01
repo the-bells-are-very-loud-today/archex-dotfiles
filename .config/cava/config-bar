@@ -164,7 +164,7 @@ channels = mono
 # Raw output target.
 # On Linux, a fifo will be created if target does not exist.
 # On Windows, a named pipe will be created if target does not exist.
-raw_target = /home/bells/test.fifo
+raw_target = /home/bells/.cache/gel.fifo
 # Raw data format. Can be 'binary' or 'ascii'.
 data_format = ascii
 

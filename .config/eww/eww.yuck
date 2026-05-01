@@ -1,7 +1,7 @@
 (defvar gel-speed "12s")
 (defvar on true)
 (defvar scroll_width 230)
-(deflisten cava-data :initial "0,0,0,0,0" 'cat ~/test.fifo')
+(deflisten cava-data :initial "0,0,0,0,0" 'cat ~/.cache/gel.fifo')
 (defpoll playing :interval "1s"
 		:run-while on
 		:initial "No players found"
@@ -81,7 +81,6 @@
 				:width {on ? 80 : 0}
 				:height 20
 				:halign "center"
-				:stlye {on ? "margin-left: 0px" : "margin-left: 0px"}
 				(button :onclick {on ? "playerctl -p ncspot previous" : ""} {on ? "" : ""})
 				(button :onclick {on ? playing == 'Playing' ? "playerctl -p ncspot play-pause && eww update playing='false'" : "playerctl -p ncspot play-pause && eww update playing='Playing'" : ""} 
 					:class "play-pause" 
